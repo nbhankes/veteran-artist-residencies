@@ -39,6 +39,10 @@ h1 {
   background: black;
 }
 
+img {
+  max-width: 100%;
+}
+
 /************** MISCONCEPTION SECTION *************/
 
 .misconception-section {
@@ -54,7 +58,7 @@ h1 {
 
 .misconception-img img {
   margin: 1rem 1rem;
-  max-width: 500px;
+  max-width: 700px;
 }
 
 @media only screen and (max-width: 1125px) {
@@ -68,4 +72,133 @@ h1 {
     font-size: 2rem;
     margin: 1rem 1rem;
   }
+}
+
+/************** AUTHOR IMAGES *************/
+
+.author-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vonnegut-img {
+  height: 376px;
+  width: 250px;
+  background: url("assets/vonnegut.jpg") no-repeat;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+}
+
+.vonnegut-img:hover {
+  background: url("assets/vonnegut-cover.jpg") no-repeat;
+}
+
+.heller-img {
+  height: 376px;
+  width: 250px;
+  background: url("assets/heller.jpg") no-repeat;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+}
+
+.heller-img:hover {
+  background: url("assets/heller-cover.jpg") no-repeat;
+}
+
+.cummings-img {
+  height: 376px;
+  width: 250px;
+  background: url("assets/cummings.jpg") no-repeat;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+}
+
+.cummings-img:hover {
+  background: url("assets/cummings-cover.jpg") no-repeat;
+  z-index: 1;
+}
+
+.asimov-img {
+  height: 376px;
+  width: 250px;
+  background: url("assets/asimov.jpg") no-repeat;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+}
+
+.asimov-img:hover {
+  background: url("assets/asimov-cover.jpg") no-repeat;
+}
+
+.stone-img {
+  height: 376px;
+  width: 250px;
+  background: url("assets/stone.jpg") no-repeat;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+}
+
+.stone-img:hover {
+  background: url("assets/stone-cover.jpg") no-repeat;
+}
+
+.mailer-img {
+  height: 376px;
+  width: 250px;
+  background: url("assets/mailer.jpg") no-repeat;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+}
+
+.mailer-img:hover {
+  background: url("assets/mailer-cover.jpg") no-repeat;
+}
+
+.bierce-img {
+  height: 376px;
+  width: 250px;
+  background: url("assets/bierce.gif") no-repeat;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+}
+
+.bierce-img:hover {
+  background: url("assets/bierce-cover.jpg") no-repeat;
+}
+
+.obrien-img {
+  height: 376px;
+  width: 250px;
+  background: url("assets/obrien.jpg") no-repeat;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+}
+
+.obrien-img:hover {
+  background: url("assets/obrien-cover.jpg") no-repeat;
+}
+
+.whitman-img {
+  height: 376px;
+  width: 250px;
+  background: url("assets/whitman.jpg") no-repeat;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+}
+
+.whitman-img:hover {
+  background: url("assets/whitman-cover.jpg") no-repeat;
+}
+
+.salinger-img {
+  height: 376px;
+  width: 250px;
+  background: url("assets/salinger.jpg") no-repeat;
+  display: inline-block;
+  margin: 0.5rem 0.5rem;
+}
+
+.salinger-img:hover {
+  background: url("assets/salinger-cover.jpg") no-repeat;
 }
