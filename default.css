@@ -22,6 +22,7 @@ html {
 section {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 h1 {
@@ -88,130 +89,144 @@ img {
 .author-container {
   display: flex;
   justify-content: center;
-  margin-top: 5rem;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  flex-shrink: 1;
+  object-fit: fill;
+  margin: 0 auto;
 }
-
-.author-img-container {
+.author-img {
+  max-width: 100%;
+  width: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.author-pair {
+  display: flex;
+  justify-content: center;
 }
 
 .vonnegut-img {
-  width: 250px;
-  height: 376px;
-  --aspect-ratio: 250/376;
+  width: 140px;
+  height: 210px;
   background: url("assets/vonnegut.jpg") no-repeat;
-  display: inline-block;
+  background-size: contain;
   margin: 0.5rem 0.5rem;
 }
 
 .vonnegut-img:hover {
   background: url("assets/vonnegut-cover.jpg") no-repeat;
-}
-
-.heller-img {
-  height: 376px;
-  width: 250px;
-  background: url("assets/heller.jpg") no-repeat;
-  display: inline-block;
-  margin: 0.5rem 0.5rem;
-}
-
-.heller-img:hover {
-  background: url("assets/heller-cover.jpg") no-repeat;
+  background-size: contain;
 }
 
 .cummings-img {
-  height: 376px;
-  width: 250px;
+  width: 140px;
+  height: 210px;
   background: url("assets/cummings.jpg") no-repeat;
+  background-size: contain;
   display: inline-block;
   margin: 0.5rem 0.5rem;
 }
 
 .cummings-img:hover {
   background: url("assets/cummings-cover.jpg") no-repeat;
-  z-index: 1;
+  background-size: contain;
+}
+
+.heller-img {
+  width: 140px;
+  height: 210px;
+  background: url("assets/heller.jpg") no-repeat;
+  background-size: contain;
+  margin: 0.5rem 0.5rem;
+}
+
+.heller-img:hover {
+  background: url("assets/heller-cover.jpg") no-repeat;
+  background-size: contain;
 }
 
 .asimov-img {
-  height: 376px;
-  width: 250px;
+  width: 140px;
+  height: 210px;
   background: url("assets/asimov.jpg") no-repeat;
+  background-size: contain;
   display: inline-block;
   margin: 0.5rem 0.5rem;
 }
 
 .asimov-img:hover {
   background: url("assets/asimov-cover.jpg") no-repeat;
+  background-size: contain;
 }
 
 .stone-img {
-  height: 376px;
-  width: 250px;
+  width: 140px;
+  height: 210px;
   background: url("assets/stone.jpg") no-repeat;
+  background-size: contain;
   display: inline-block;
   margin: 0.5rem 0.5rem;
 }
 
 .stone-img:hover {
   background: url("assets/stone-cover.jpg") no-repeat;
+  background-size: contain;
 }
 
 .mailer-img {
-  height: 376px;
-  width: 250px;
+  width: 140px;
+  height: 210px;
   background: url("assets/mailer.jpg") no-repeat;
+  background-size: contain;
   display: inline-block;
   margin: 0.5rem 0.5rem;
 }
 
 .mailer-img:hover {
   background: url("assets/mailer-cover.jpg") no-repeat;
+  background-size: contain;
 }
 
 .bierce-img {
-  height: 376px;
-  width: 250px;
+  width: 140px;
+  height: 210px;
   background: url("assets/bierce.gif") no-repeat;
+  background-size: contain;
   display: inline-block;
   margin: 0.5rem 0.5rem;
 }
 
 .bierce-img:hover {
   background: url("assets/bierce-cover.jpg") no-repeat;
+  background-size: contain;
 }
 
 .obrien-img {
-  height: 376px;
-  width: 250px;
+  width: 140px;
+  height: 210px;
   background: url("assets/obrien.jpg") no-repeat;
+  background-size: contain;
   display: inline-block;
   margin: 0.5rem 0.5rem;
 }
 
 .obrien-img:hover {
   background: url("assets/obrien-cover.jpg") no-repeat;
-}
-
-.whitman-img {
-  height: 376px;
-  width: 250px;
-  background: url("assets/whitman.jpg") no-repeat;
-  display: inline-block;
-  margin: 0.5rem 0.5rem;
-}
-
-.whitman-img:hover {
-  background: url("assets/whitman-cover.jpg") no-repeat;
+  background-size: contain;
 }
 
 .salinger-img {
-  height: 376px;
-  width: 250px;
+  width: 140px;
+  height: 210px;
   background: url("assets/salinger.jpg") no-repeat;
+  background-size: contain;
   display: inline-block;
   margin: 0.5rem 0.5rem;
 }
 
 .salinger-img:hover {
   background: url("assets/salinger-cover.jpg") no-repeat;
+  background-size: contain;
 }
