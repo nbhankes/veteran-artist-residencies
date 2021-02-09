@@ -15,8 +15,10 @@
 
 html {
   font-size: 18px;
-  margin: 0 auto;
+  margin: 0 0;
   width: 100%;
+  background: black;
+  color: white;
 }
 
 section {
@@ -39,10 +41,6 @@ h1 {
   height: 100px;
   width: 100%;
   background: black;
-}
-
-img {
-  max-width: 100%;
 }
 
 /************** MISCONCEPTION SECTION *************/
@@ -70,20 +68,6 @@ img {
   margin: 0 5%;
 }
 
-@media only screen and (max-width: 1125px) {
-  .misconception-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 95%;
-  }
-
-  .misconception-text {
-    font-size: 2rem;
-    margin: 1rem 1rem;
-  }
-}
-
 /************** AUTHOR IMAGES *************/
 
 .author-container {
@@ -92,24 +76,21 @@ img {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
-  flex-shrink: 1;
+  flex-shrink: 2;
   object-fit: fill;
   margin: 0 auto;
 }
 .author-img {
-  max-width: 100%;
-  width: 100%;
-  min-width: 0;
-  min-height: 0;
+  width: 120px;
+  height: 185px;
 }
+
 .author-pair {
   display: flex;
   justify-content: center;
 }
 
 .vonnegut-img {
-  width: 140px;
-  height: 210px;
   background: url("assets/vonnegut.jpg") no-repeat;
   background-size: contain;
   margin: 0.5rem 0.5rem;
@@ -121,8 +102,6 @@ img {
 }
 
 .cummings-img {
-  width: 140px;
-  height: 210px;
   background: url("assets/cummings.jpg") no-repeat;
   background-size: contain;
   display: inline-block;
@@ -135,8 +114,6 @@ img {
 }
 
 .heller-img {
-  width: 140px;
-  height: 210px;
   background: url("assets/heller.jpg") no-repeat;
   background-size: contain;
   margin: 0.5rem 0.5rem;
@@ -148,8 +125,6 @@ img {
 }
 
 .asimov-img {
-  width: 140px;
-  height: 210px;
   background: url("assets/asimov.jpg") no-repeat;
   background-size: contain;
   display: inline-block;
@@ -162,8 +137,6 @@ img {
 }
 
 .stone-img {
-  width: 140px;
-  height: 210px;
   background: url("assets/stone.jpg") no-repeat;
   background-size: contain;
   display: inline-block;
@@ -176,8 +149,6 @@ img {
 }
 
 .mailer-img {
-  width: 140px;
-  height: 210px;
   background: url("assets/mailer.jpg") no-repeat;
   background-size: contain;
   display: inline-block;
@@ -190,8 +161,6 @@ img {
 }
 
 .bierce-img {
-  width: 140px;
-  height: 210px;
   background: url("assets/bierce.gif") no-repeat;
   background-size: contain;
   display: inline-block;
@@ -204,8 +173,6 @@ img {
 }
 
 .obrien-img {
-  width: 140px;
-  height: 210px;
   background: url("assets/obrien.jpg") no-repeat;
   background-size: contain;
   display: inline-block;
@@ -218,8 +185,6 @@ img {
 }
 
 .salinger-img {
-  width: 140px;
-  height: 210px;
   background: url("assets/salinger.jpg") no-repeat;
   background-size: contain;
   display: inline-block;
