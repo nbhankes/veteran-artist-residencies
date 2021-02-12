@@ -1,12 +1,29 @@
 /* gray #efefef */
 
-.button {
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  margin: 0 auto;
-  text-decoration: none;
-  color: initial;
+:root {
+  --text-1: 0.5rem;
+  --text-2: 1rem;
+  --text-3: 1.5rem;
+  --text-4: 2rem;
+  --text-5: 2.5rem;
+  --text-6: 3rem;
+  --button: rgb(0, 0, 102);
+  --button-text: rgb(255, 255, 255);
+  --button-hover: rgb(0, 102, 204);
+  --button-hover-text: rgb(234, 234, 236);
+  --icons: rgb(139, 95, 211);
+  --icons-hover: rgb(255, 201, 51);
+  --banner: rgb(197, 175, 233);
+  --h2: rgb(197, 175, 233);
+  --h3: rgb(255, 201, 51);
+  --link: rgb(255, 222, 133);
+  --link-hover: rgb(255, 201, 51);
+  --glass: 29, 29, 32;
+  --text: rgb(234, 234, 236);
+  --theme-switch: rgb(255, 201, 51);
+  --theme-switch-hover: rgb(27, 13, 48);
+  --background-image: url(/assets/Endless-Constellation-Dark.svg);
+  --header-font: "Raleway", sans-serif;
 }
 
 * {
@@ -17,8 +34,9 @@ html {
   font-size: 18px;
   margin: 0 0;
   width: 100%;
-  background: black;
-  color: white;
+  background: whitesmoke;
+  color: black;
+  font-family: "Raleway", sans-serif;
 }
 
 section {
@@ -27,8 +45,9 @@ section {
   padding: 0 1rem;
 }
 
-h1 {
-  color: white;
+p {
+  margin: 1rem 0;
+  font-size: var(--text-2);
 }
 
 .center {
@@ -37,10 +56,40 @@ h1 {
   align-items: center;
 }
 
+/************** HEADER *************/
 .header-container {
-  height: 100px;
-  width: 100%;
-  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-text {
+  font-size: var(--text-3);
+}
+
+.ink-people {
+  font-size: var(--text-1);
+}
+
+button {
+  background-color: var(--button);
+  color: var(--button-text);
+  width: 6rem;
+  height: 2rem;
+  font-weight: heavy;
+  border-radius: 5px;
+  font-size: var(--text-2);
+  border: none;
+}
+
+button:hover {
+  color: var(--button-hover-text);
+  background-color: var(--button-hover);
+}
+
+h2 {
+  text-align: center;
 }
 
 /************** MISCONCEPTION SECTION *************/
@@ -54,11 +103,11 @@ h1 {
   margin: 2rem auto;
 }
 
-.misconception-text {
-  font-size: 2rem;
+.misconception-text h1 {
   margin: 1rem 1rem;
   margin: 2rem auto;
-  text-align: center;
+  text-align: left;
+  font-size: var(--text-3);
 }
 
 .misconception-img img {
@@ -194,4 +243,25 @@ h1 {
 .salinger-img:hover {
   background: url("assets/salinger-cover.jpg") no-repeat;
   background-size: contain;
+}
+
+/************** Art List *************/
+
+.art-list {
+  margin-left: 5%;
+}
+
+/************** DONATE NOW *************/
+
+.donate-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: gray;
+  width: 100%;
+  padding-top: 1rem;
+}
+
+.donate-now button {
+  margin: 1rem auto;
 }
