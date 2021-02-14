@@ -40,8 +40,8 @@ html {
 }
 
 section {
-  max-width: 1400px;
-  margin: 0 auto;
+  max-width: 700px;
+  margin: 2.5rem auto;
   padding: 0 1rem;
 }
 
@@ -59,9 +59,11 @@ p {
 /************** HEADER *************/
 .header-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  background: red;
+  padding: 0.5rem 0.5rem;
 }
 
 .header-text {
@@ -69,7 +71,8 @@ p {
 }
 
 .ink-people {
-  font-size: var(--text-1);
+  font-size: 0.65rem;
+  margin: 0.5rem auto;
 }
 
 button {
@@ -258,10 +261,45 @@ h2 {
   flex-direction: column;
   justify-content: center;
   background: gray;
-  width: 100%;
-  padding-top: 1rem;
+  width: 60%;
+  padding: 1rem 1rem;
+  margin: 0 auto;
 }
 
 .donate-now button {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/************** FORM ****************/
+
+#mc_embed_signup form {
+  width: 60%;
   margin: 1rem auto;
+  background-color: gray;
+}
+
+#mc_embed_signup_scroll {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+#mc_embed_signup_scroll .button-custom {
+  background-color: var(--button);
+  color: var(--button-text);
+  width: 6rem;
+  height: 2rem;
+  font-weight: heavy;
+  border-radius: 5px;
+  font-size: var(--text-2);
+  border: 0;
+  margin: 0 auto;
+}
+
+#mc_embed_signup_scroll .button-custom:hover {
+  color: var(--button-hover-text);
+  background-color: var(--button-hover);
 }
