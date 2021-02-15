@@ -1,0 +1,92 @@
+:root {
+  --text-1: 0.5rem;
+  --text-2: 1rem;
+  --text-3: 1.5rem;
+  --text-4: 2rem;
+  --text-5: 2.5rem;
+  --text-6: 3rem;
+  --main: #03045e;
+  --main-comp-1: #e6efef;
+  --main-comp-2: #cddfdf;
+  --main-comp-3: #a8c7c7;
+  --main-comp-4: #406464;
+  --main-comp-5: #304b4b;
+  --gs-1: #ffffff;
+  --gs-2: #f5f5f5;
+  --gs-3: #e0e0e0;
+  --gs-4: #c2c2c2;
+  --gs-5: #858585;
+  --gs-6: #5c5c5c;
+  --gs-7: #474747;
+  --gs-8: #292929;
+  --gs-9: #1f1f1f;
+  --main-acc-1: #fdc872;
+  --main-acc-2: #fcb84a;
+  --main-acc-3: #fca822;
+  --main-acc-4: #f19604;
+  --comp-acc-1: #ba3b46;
+  --comp-acc-2: #8c2c34;
+  --comp-acc-3: #6d2228;
+  --comp-acc-4: #4e181d;
+  --button: #deb72b;
+  --button-text: #ffffff;
+  --button-hover: #c29f1e;
+  --button-hover-text: #ffffff;
+  --glass: 29, 29, 32;
+  --text: #292929;
+  --header-font: "Raleway", sans-serif;
+}
+
+/************** HEADER *************/
+.header-container {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: var(--main);
+  padding: 0.5rem 0.5rem;
+}
+
+.header-text {
+  font-size: var(--text-3);
+  color: var(--gs-3);
+}
+
+.ink-people {
+  font-size: 0.65rem;
+  margin: 0.5rem auto;
+}
+
+button {
+  background-color: var(--button);
+  color: var(--button-text);
+  width: 8rem;
+  height: 3rem;
+  font-weight: heavy;
+  border-radius: 5px;
+  font-size: var(--text-3);
+  border: none;
+}
+
+button:hover {
+  color: var(--button-hover-text);
+  background-color: var(--button-hover);
+}
+
+h2 {
+  text-align: center;
+}
+
+/***************** FOOTER *****************/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: var(--main);
+  color: var(--gs-2);
+  padding: 0.5rem 0.5rem;
+  height: var(--text-6);
+}

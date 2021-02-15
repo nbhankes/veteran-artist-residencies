@@ -1,5 +1,3 @@
-/* gray #efefef */
-
 :root {
   --text-1: 0.5rem;
   --text-2: 1rem;
@@ -7,22 +5,35 @@
   --text-4: 2rem;
   --text-5: 2.5rem;
   --text-6: 3rem;
-  --button: rgb(0, 0, 102);
-  --button-text: rgb(255, 255, 255);
-  --button-hover: rgb(0, 102, 204);
-  --button-hover-text: rgb(234, 234, 236);
-  --icons: rgb(139, 95, 211);
-  --icons-hover: rgb(255, 201, 51);
-  --banner: rgb(197, 175, 233);
-  --h2: rgb(197, 175, 233);
-  --h3: rgb(255, 201, 51);
-  --link: rgb(255, 222, 133);
-  --link-hover: rgb(255, 201, 51);
+  --main: #03045e;
+  --main-comp-1: #e6efef;
+  --main-comp-2: #cddfdf;
+  --main-comp-3: #a8c7c7;
+  --main-comp-4: #406464;
+  --main-comp-5: #304b4b;
+  --gs-1: #ffffff;
+  --gs-2: #f5f5f5;
+  --gs-3: #e0e0e0;
+  --gs-4: #c2c2c2;
+  --gs-5: #858585;
+  --gs-6: #5c5c5c;
+  --gs-7: #474747;
+  --gs-8: #292929;
+  --gs-9: #1f1f1f;
+  --main-acc-1: #fdc872;
+  --main-acc-2: #fcb84a;
+  --main-acc-3: #fca822;
+  --main-acc-4: #f19604;
+  --comp-acc-1: #ba3b46;
+  --comp-acc-2: #8c2c34;
+  --comp-acc-3: #6d2228;
+  --comp-acc-4: #4e181d;
+  --button: #deb72b;
+  --button-text: #ffffff;
+  --button-hover: #c29f1e;
+  --button-hover-text: #ffffff;
   --glass: 29, 29, 32;
-  --text: rgb(234, 234, 236);
-  --theme-switch: rgb(255, 201, 51);
-  --theme-switch-hover: rgb(27, 13, 48);
-  --background-image: url(/assets/Endless-Constellation-Dark.svg);
+  --text: #292929;
   --header-font: "Raleway", sans-serif;
 }
 
@@ -34,9 +45,12 @@ html {
   font-size: 18px;
   margin: 0 0;
   width: 100%;
-  background: whitesmoke;
-  color: black;
+  background: var(--main-comp-1);
+  color: var(--gs-8);
   font-family: "Raleway", sans-serif;
+}
+body {
+  overflow-x: hidden;
 }
 
 section {
@@ -58,16 +72,18 @@ p {
 
 /************** HEADER *************/
 .header-container {
+  height: 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  background: red;
+  background: var(--main);
   padding: 0.5rem 0.5rem;
 }
 
 .header-text {
   font-size: var(--text-3);
+  color: var(--gs-3);
 }
 
 .ink-people {
@@ -78,11 +94,11 @@ p {
 button {
   background-color: var(--button);
   color: var(--button-text);
-  width: 6rem;
-  height: 2rem;
+  width: 8rem;
+  height: 3rem;
   font-weight: heavy;
   border-radius: 5px;
-  font-size: var(--text-2);
+  font-size: var(--text-3);
   border: none;
 }
 
@@ -260,7 +276,8 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: gray;
+  background: var(--main);
+  color: var(--gs-2);
   width: 60%;
   padding: 1rem 1rem;
   margin: 0 auto;
@@ -272,34 +289,86 @@ h2 {
   margin-right: auto;
 }
 
+/***************** SLIDER ANIMATIONS *****************/
+
+.from-left {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
 /************** FORM ****************/
 
 #mc_embed_signup form {
   width: 60%;
   margin: 1rem auto;
-  background-color: gray;
+  background: var(--main);
+  color: var(--gs-2);
 }
 
 #mc_embed_signup_scroll {
   display: flex;
   justify-items: center;
   flex-direction: column;
-  padding: 1rem 1rem;
+  padding: 0 1rem;
+}
+
+#mce-error-response {
+  color: var(--gs-2);
+}
+
+#mce-success-response {
+  color: var(--gs-2);
 }
 
 #mc_embed_signup_scroll .button-custom {
   background-color: var(--button);
   color: var(--button-text);
-  width: 6rem;
-  height: 2rem;
+  width: 8rem;
+  height: 3rem;
   font-weight: heavy;
   border-radius: 5px;
-  font-size: var(--text-2);
+  font-size: var(--text-3);
   border: 0;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
 }
 
 #mc_embed_signup_scroll .button-custom:hover {
   color: var(--button-hover-text);
   background-color: var(--button-hover);
+}
+
+/***************** FOOTER *****************/
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  background: var(--main);
+  color: var(--gs-2);
+  padding: 0.5rem 0.5rem;
+  height: var(--text-6);
 }
