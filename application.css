@@ -37,56 +37,16 @@
   --header-font: "Raleway", sans-serif;
 }
 
-/************** HEADER *************/
+html {
+  font-size: 18px;
+  background: var(--main-comp-1);
+}
+
+form {
+  padding: 1rem 1rem;
+}
+
 .header-container {
-  height: 4rem;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  background: var(--main);
-  padding: 0.5rem 0.5rem;
-}
-
-.header-text {
-  font-size: var(--text-3);
-  color: var(--gs-3);
-}
-
-.ink-people {
-  font-size: 0.65rem;
-  margin: 0.5rem auto;
-}
-
-button {
-  background-color: var(--button);
-  color: var(--button-text);
-  width: 8rem;
-  height: 3rem;
-  font-weight: heavy;
-  border-radius: 5px;
-  font-size: var(--text-3);
-  border: none;
-}
-
-button:hover {
-  color: var(--button-hover-text);
-  background-color: var(--button-hover);
-}
-
-h2 {
-  text-align: center;
-}
-
-/***************** FOOTER *****************/
-
-footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  background: var(--main);
-  color: var(--gs-2);
-  padding: 0.5rem 0.5rem;
-  height: var(--text-6);
+  justify-content: center;
 }

@@ -66,10 +66,67 @@ p {
   font-size: var(--text-2);
 }
 
+a {
+  color: var(--text);
+}
+
+a:hover {
+  font-style: italic;
+  font-weight: 800;
+  color: var(--comp-acc-1);
+}
+
 .center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/************ MOBILE ****************/
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4caf50;
+  color: white;
 }
 
 /************** HEADER *************/
@@ -91,24 +148,8 @@ header {
   }
 }
 
-ul li {
+.menu-ul > ul li {
   display: inline-block;
-}
-
-.social li {
-  margin: 0 1rem 0 0;
-}
-
-a i {
-  font-size: 1.5rem;
-}
-
-.shopping li {
-  margin: 0 0 0 1rem;
-}
-
-i {
-  margin: 0 0.5rem 0 0;
 }
 
 #home {
@@ -117,8 +158,8 @@ i {
   margin: 1rem 0;
 }
 
-#logo img {
-  max-width: 6rem;
+#logo {
+  max-width: 4rem;
   height: auto;
 }
 
@@ -136,18 +177,15 @@ i {
     justify-content: space-between;
   }
 
-  #logo img {
-    max-width: 4rem;
+  #logo {
+    max-width: 2rem;
+    margin: 0.5rem 0.5rem;
   }
 
   #burger {
     display: block;
-    font-size: var(--text-4);
+    font-size: var(--text-3);
     margin-right: 1rem;
-  }
-
-  i {
-    font-size: 3rem;
   }
 }
 
@@ -178,13 +216,7 @@ i {
   }
 }
 
-li {
-  display: inline-block;
-  margin: 1.25rem 1rem;
-  text-align: center;
-}
-
-li {
+.menu-ul > li {
   display: inline-block;
   margin: 1.25rem 1rem;
   text-align: center;
@@ -208,31 +240,17 @@ li {
     display: block;
     margin: 0;
   }
+}
 
-  a {
-    display: block;
-    padding: 1rem;
-    font-size: 1.25rem;
-  }
-
-  a:hover {
-    background: #212121;
-    color: white;
-  }
-
-  .social-mobile {
-    display: inline-block;
-    width: 32%;
-  }
-
-  a i {
-    font-size: 2rem;
-  }
+a menu-ul {
+  display: block;
+  padding: 0.5rem;
+  font-size: 1rem;
 }
 
 .ink-people {
   font-size: 0.65rem;
-  margin: 0.5rem auto;
+  margin: 0 auto;
 }
 
 button {
@@ -253,6 +271,25 @@ button:hover {
 
 h2 {
   text-align: center;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 38rem) {
+  .menu-mobile.appear {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .menu-ul-mobile.appear li {
+    width: 100%;
+    text-align: center;
+    border-top: solid 2px black;
+  }
 }
 
 /************** MISCONCEPTION SECTION *************/
