@@ -5,7 +5,7 @@
   --text-4: 2rem;
   --text-5: 2.5rem;
   --text-6: 3rem;
-  --main: #03045e;
+  --main: #3c4d5f;
   --main-comp-1: #e6efef;
   --main-comp-2: #cddfdf;
   --main-comp-3: #a8c7c7;
@@ -51,13 +51,24 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 38rem) {
+  html {
+    font-size: 14px;
+  }
+}
+
+::selection {
+  background: var(--main);
+  color: var(--gs-1);
+}
+
 body {
   overflow-x: hidden;
 }
 
 section {
   max-width: 700px;
-  margin: 2.5rem auto;
+  margin: 1rem auto 0 auto;
   padding: 0 1rem;
 }
 
@@ -73,7 +84,7 @@ a {
 a:hover {
   font-style: italic;
   font-weight: 800;
-  color: var(--comp-acc-1);
+  color: var(--button);
 }
 
 .center {
@@ -109,6 +120,7 @@ a:hover {
   text-decoration: none;
   font-size: 17px;
   display: block;
+  text-align: center;
 }
 
 .topnav a.icon {
@@ -124,11 +136,6 @@ a:hover {
   color: black;
 }
 
-.active {
-  background-color: #4caf50;
-  color: white;
-}
-
 /************** HEADER *************/
 header {
   max-width: 60rem;
@@ -139,13 +146,6 @@ header {
   display: flex;
   justify-content: space-between;
   flex-flow: row nowrap;
-}
-
-@media only screen and (max-width: 38rem) {
-  .social,
-  .shopping {
-    display: none;
-  }
 }
 
 .menu-ul > ul li {
@@ -193,7 +193,7 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 
 .menu:before {
@@ -239,6 +239,7 @@ header {
   .mobile {
     display: block;
     margin: 0;
+    text-align: center;
   }
 }
 
@@ -288,8 +289,15 @@ h2 {
   .menu-ul-mobile.appear li {
     width: 100%;
     text-align: center;
-    border-top: solid 2px black;
+    border-top: solid 2px var(--text);
   }
+}
+
+.name-banner {
+  text-align: center;
+  font-size: var(--text-4);
+  margin: 0.75rem 0;
+  font-weight: 800;
 }
 
 /************** MISCONCEPTION SECTION *************/
@@ -310,11 +318,16 @@ h2 {
   font-size: var(--text-3);
 }
 
+.misconception-img {
+  display: flex;
+  justify-content: center;
+}
+
 .misconception-img img {
   width: 90%;
   max-width: 700px;
   height: auto;
-  margin: 0 5%;
+  margin: 2rem auto;
 }
 
 /************** AUTHOR IMAGES *************/
@@ -451,6 +464,28 @@ h2 {
   margin-left: 5%;
 }
 
+@media only screen and (max-width: 38rem) {
+  .art-list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0;
+  }
+
+  .art-list li {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/************** The MISSION *************/
+
+.the-mission {
+  width: 100%;
+  border-top: var(--text) 2px solid;
+  border-bottom: var(--text) 4px solid;
+}
+
 /************** DONATE NOW *************/
 
 .donate-now {
@@ -465,10 +500,23 @@ h2 {
   border-bottom: var(--comp-acc-1) 6px solid;
 }
 
+@media only screen and (max-width: 38rem) {
+  .donate-now {
+    width: 90%;
+  }
+}
+
 .donate-now button {
   margin-top: 1rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+progress {
+  width: 90%;
+  height: var(--text-3);
+  margin-top: 1rem;
+  -webkit-appearance: none;
 }
 
 /***************** SLIDER ANIMATIONS *****************/
@@ -509,6 +557,12 @@ h2 {
   border-bottom: var(--comp-acc-1) 6px solid;
 }
 
+@media only screen and (max-width: 38rem) {
+  #mc_embed_signup form {
+    width: 90%;
+  }
+}
+
 #mc_embed_signup_scroll {
   display: flex;
   justify-items: center;
@@ -546,12 +600,18 @@ h2 {
 /***************** FOOTER *****************/
 
 footer {
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  color: var(--text);
   align-items: center;
-  flex-direction: row;
-  background: var(--main);
-  color: var(--gs-2);
+  border-top: black 2px solid;
   padding: 0.5rem 0.5rem;
   height: var(--text-6);
+  margin-bottom: 2rem;
+}
+
+footer-p {
+  width: 100%;
 }
