@@ -90,6 +90,7 @@ a:hover {
 .center {
   display: flex;
   justify-content: center;
+  align-self: flex-start;
   align-items: center;
 }
 
@@ -160,6 +161,7 @@ header {
 
 #logo {
   max-width: 4rem;
+  align-self: flex-start;
   height: auto;
 }
 
@@ -320,6 +322,7 @@ h2 {
 
 .misconception-img {
   display: flex;
+  align-self: flex-start;
   justify-content: center;
 }
 
