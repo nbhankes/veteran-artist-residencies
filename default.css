@@ -322,7 +322,7 @@ h2 {
 
 .misconception-img {
   display: flex;
-  align-self: flex-start;
+  align-self: center;
   justify-content: center;
 }
 
