@@ -484,6 +484,7 @@ h2 {
   width: 100%;
   border-top: var(--text) 2px solid;
   border-bottom: var(--text) 4px solid;
+  padding: 1rem 0;
 }
 
 /************** DONATE NOW *************/
