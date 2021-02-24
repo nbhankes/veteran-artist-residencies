@@ -256,6 +256,11 @@ a menu-ul {
   margin: 0 auto;
 }
 
+.ink-people h3 {
+  text-align: center;
+  width: 100%;
+}
+
 button {
   background-color: var(--button);
   color: var(--button-text);
