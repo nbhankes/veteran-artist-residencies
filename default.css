@@ -322,6 +322,21 @@ h2 {
 }
 
 /************** MISCONCEPTION SECTION *************/
+/**************************************************/
+@keyframes mymove {
+  from {
+    transform: rotate(-180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.my-svg {
+  animation: mymove 3s infinite;
+  animation-iteration-count: 1;
+  animation-delay: 1sec;
+}
 
 .video-wrapper {
   position: relative;
@@ -367,9 +382,8 @@ iframe {
   margin: 2rem auto;
 }
 
-/************** IMAGES *************/
-
-/************** Art List *************/
+/*************** Art List ***************/
+/****************************************/
 
 .art-list {
   margin-left: 5%;
@@ -390,6 +404,7 @@ iframe {
 }
 
 /************** The MISSION *************/
+/****************************************/
 
 .the-mission {
   width: 100%;
@@ -398,7 +413,46 @@ iframe {
   padding: 1rem 0;
 }
 
-/************** DONATE NOW *************/
+/**************** Ad Copy ***************/
+/****************************************/
+@media only screen and (max-width: 38rem) {
+  .ad-copy-desktop {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+    justify-content: space-around;
+  }
+}
+
+.ad-copy-desktop {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1500px;
+  width: 100%;
+  margin: 3rem auto;
+  padding: 2rem 0rem;
+  background-color: var(--main);
+  border-top: 4px solid black;
+  border-bottom: var(--comp-acc-1) 6px solid;
+}
+
+.ad-copy-desktop article {
+  border: 2px solid black;
+  margin: 1rem 1rem;
+  padding: 0.5rem 0.5rem;
+  background-color: var(--main-comp-1);
+}
+
+.ad-copy-desktop article:hover {
+  transform: translateY(-5px);
+}
+
+/************** DONATATIONS *************/
+
+.donation-section {
+  margin-top: 4rem;
+}
 
 .donate-now {
   display: flex;
@@ -425,6 +479,7 @@ iframe {
 }
 
 /***************** SLIDER ANIMATIONS *****************/
+/*****************************************************/
 
 .from-left {
   -webkit-transform: translateX(-50%);
@@ -507,6 +562,7 @@ iframe {
 }
 
 /***************** FOOTER *****************/
+/******************************************/
 
 footer {
   display: flex;
@@ -517,8 +573,13 @@ footer {
   border-top: black 2px solid;
   padding: 0.5rem 0.5rem;
   text-align: center;
-  width: 100%;
+  width: auto;
   color: var(--gs-2);
   background-color: var(--main);
   border-bottom: var(--comp-acc-1) 6px solid;
+}
+
+.footer-p a {
+  color: var(--gs-2);
+  text-decoration: none;
 }
