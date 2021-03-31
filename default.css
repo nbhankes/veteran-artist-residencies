@@ -425,6 +425,7 @@ iframe {
   border-top: var(--text) 2px solid;
   border-bottom: var(--text) 4px solid;
   padding: 1rem 0;
+  margin: 3rem 0;
 }
 
 /**************** Ad Copy ***************/
@@ -561,10 +562,14 @@ hr {
   opacity: 1;
 }
 
-/************** FORM ****************/
+/************** Mailing List FORM ****************/
 
 .mailing-list a {
   color: var(--gs-2);
+}
+
+.mailing-list {
+  margin: 5rem auto;
 }
 
 #mc_embed_signup {
@@ -619,6 +624,7 @@ footer {
   justify-content: space-between;
   flex-direction: column;
   min-height: 8rem;
+  margin-top: 2rem;
   color: var(--text);
   align-items: center;
   border-top: black 2px solid;
