@@ -36,3 +36,11 @@ appearOptions);
 sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
+
+
+// Form Masking
+new Cleave('.input-phone', {
+  numericOnly: true,
+  blocks: [0, 3, 0, 3, 4],
+  delimiters: ["(", ")", " ", "-"]
+});

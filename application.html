@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./application.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cleave.js/1.6.0/cleave.min.js" integrity="sha512-KaIyHb30iXTXfGyI9cyKFUIRSSuekJt6/vqXtyQKhQP6ozZEGY8nOtRS6fExqE4+RbYHus2yGyYg1BrqxzV6YA==" crossorigin="anonymous"></script>
+    <script src="./default.js"></script>
     <title>Veteran Artist Residencies</title>
   </head>
 
@@ -20,15 +21,20 @@
       <input type="text" name="user_name" />
       <label>Email</label>
       <input type="email" name="user_email" />
-      <label for="phone">Phone</label>
-      <input type="text" name="phone_number" />
+      <label for="phone" >Phone</label>
+      <input type="text" class="input-phone" name="phone_number" />
       <label>What</label>
       <textarea name="What"></textarea>
       <label>Why</label>
       <textarea name="why-message"></textarea>
+      <p>This application is a pre-screening process. Your approach to the open-ended format reveals important traits of how your mind works. Just answer in the way that feels most natural.</p>
+      <p>Applicants are encouraged to write their responses elsewhere, somewhere they can be saved mid-edit. </p>
+      <p>Once the application is submitted, applicants can expect to be contacted within two weeks.</p>
       <div class="center">
         <input type="submit" value="Submit" />
       </div>
+
     </form>
+
   </body>
 </html>
