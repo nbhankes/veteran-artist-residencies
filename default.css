@@ -5,7 +5,8 @@
   --text-4: 2rem;
   --text-5: 2.5rem;
   --text-6: 3rem;
-  --main: #3c4d5f;
+  /*   --main: #3c4d5f; */
+  --main: #0f366d;
   --main-comp-1: white;
   --main-comp-2: #cddfdf;
   --main-comp-3: #a8c7c7;
@@ -513,6 +514,7 @@ hr {
   font-size: var(--text-4);
   text-align: center;
   margin-top: 1rem;
+  line-height: 2.5rem;
 }
 
 button {
