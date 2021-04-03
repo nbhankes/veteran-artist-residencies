@@ -38,9 +38,30 @@ sliders.forEach((slider) => {
 });
 
 
-// Form Masking
-new Cleave('.input-phone', {
-  numericOnly: true,
-  blocks: [0, 3, 0, 3, 4],
-  delimiters: ["(", ")", " ", "-"]
-});
+// For input masking of form
+function getPhoneInputValue() {
+
+  let phoneNumber = document.getElementById("input-phone").value;
+
+  if (phoneNumber === null) {
+    console.log("Feed me numbers!")
+  } else {
+    console.log(phoneNumber);
+  }
+
+
+}
+
+//Sticky Header
+window.onscroll = function() {setStickyHeader()};
+
+var header = document.getElementById("my-header");
+var sticky = header.offsetTop;
+
+function setStickyHeader() {
+  if (window.pageYOffset > sticky) {
+    header.id = "sticky";
+  } else {
+    header.classList.remove("sticky");
+  }
+}

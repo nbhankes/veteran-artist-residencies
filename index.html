@@ -26,80 +26,60 @@
   </head>
 
   <body>
-
-    <header class="title-area">
-      <div class="name-banner">Veteran Artist Residencies</div>
-      <div class="center ink-people">
-        <h3>
-          An
-          <a style="color: var(--button)" href="https://www.inkpeople.org/dreammaker-program">Ink People Center for the Arts</a>
-          DreamMaker Project
-        </h3>
+<!----------------------- DESKTOP NAV -------------------------->
+    <header id="my-header" class="my-header">
+      <div class="my-logo-container">
+        <img class="my-logo" src="assets/VAR-header.png" style="max-width: 250px;"></img>
       </div>
+      <nav class="my-nav-container">
+        <a href="#mission">About</a> 
+        <a href="./application.html">Apply</a> 
+        <a class=https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f" href="/js/">Donate</a>
+      </nav>
     </header>
 
-    <nav>
-      <div id="home">
-        <img id="logo" src="./assets/quill.png" alt="Logo" />
-        <div href="" id="burger" onclick="openMobileNav()">&#9776;</div>
-      </div><!--end #home-->
-      
-      <div class="menu">
-        <ul class="menu-ul">
-          <li><a href="#mission">THE MISSION</a></li>
-          <li><a href="./application.html">APPLY</a></li>
-          <li><a href="https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f">DONATE</a></li>
-        </ul>
-      </div>
-      
-      <div class="topnav">
-        <div id="myLinks">
-          <a href="#mission">THE MISSION</a>
-          <a href="./application.html">APPLY</a>
-          <a href="https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f">DONATE</a>
+<!----------------------- MOBILE NAV -------------------------->
+    <header>
+      <nav>
+        <div class="mobile-visible">
+          <img class="mobile-header-logo" src="./assets/quill.png" alt="Logo" />
+          <div href="" class="burger" onclick="openMobileNav()">&#9776;</div>
         </div>
-      </div>
-      </div><!--end .menu-->
-    </nav>
-
-    <div class="misconception-text">
-      <h3 style="margin-bottom: 2rem;">
-        We provide paid artistic
-        residencies for post-9/11 combat veterans.
-      </h3>
       
-    </div>
+        <div class="topnav">
+          <div id="myLinks">
+            <a href="#mission">THE MISSION</a>
+            <a href="./application.html">APPLY</a>
+            <a href="https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f">DONATE</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
 
     <!---------------------VIDEO------------------------------------->
     <div class="video-container">
-    <section>
-      <div class="misconception-text">
-        <h4 class="center">A message from the founder </h4>
+      <section>
+        <div class="center">
+          <p class="mission-statement" style="margin-bottom: 3rem;">
+            Providing paid artistic
+            residencies for post-9/11 combat veterans.
+          </p>
+        </div>
+
+
+        <div class="misconception-text">
+          <h4 class="center">A message from the founder </h4>
         <div class="center"><img class="my-svg" src="assets/hand.svg" style="width:5rem; height:5rem;"></img></div>
-      <div class="misconception-text">
+
 
       <div class="video-wrapper">
         <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/okr9qt9117U" allow="autoplay; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>
       </div>
     </section>
-</div>
-<!-----------------------DONATIONS----------------------------------->
-    <section class="donation-section">
-      <h3 class="the-mission center">Your generosity helps veterans find peace and tell their story.</h3>
-    
-      <section>
-        <div class="donate-now from-left slide-in">
-          <h2>Donate Now. Support a Veteran.</h2>
-          <button
-            onclick="window.location.href='https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f';"
-          >
-            Donate
-          </button>
-          <p class="center">Donations are tax deductible. Fund art, not war.</p>
-        </div>
-      </section>
-    </section>
+    </div>
+
 <!---------------------DESKTOP-AD-COPY---------------->
 
 <div class="ad-copy-desktop">
@@ -146,6 +126,46 @@
   </article>
 
   </div>
+  </div>
+</div>
+
+<!-----------------------DONATIONS----------------------------------->
+    <section class="donation-section">
+
+      <div class="support-call-out center">Only your support can make this <br/> mission possible.</div>
+    
+      <section>
+        <div class="donate-now from-left slide-in">
+          <h2 class="center">Donate Now. Support a Veteran.</h2>
+          <button
+            onclick="window.location.href='https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f';"
+          >
+            Donate
+          </button>
+          <p class="center">Donations are tax deductible. Fund art, not war.</p>
+        </div>
+      </section>
+    </section>
+
+
+
+<!-----------------------STATS SECTION ------------------------------>
+
+<div class="stats-container">
+  <div class="stat-container-top-row">
+    <div class="stat-item">
+      <div class="count">0</div>
+      <div class="stat-label">Days in Residency</div>
+    </div>
+    <div class="stat-item">
+      <div class="count">0</div>
+      <div class="stat-label">Words Written</div>
+    </div>
+  </div>
+  <div class="stat-item">
+    <div class="count" id="asterisk">1*</div>
+    <div class="stat-label">Veteran's Served</div>
+    <div class="stat-asterisk">*We were able to provide work for a homeless veteran while preparing the studio for its first veteran-artist.</div>
   </div>
 </div>
 
@@ -265,7 +285,11 @@
 
 
     <footer>
-      <p class="footer-p"><a href="mailto:vet.art.residencies@gmail.com">Contact: vet.art.residencies@gmail.com</a> <br/><br/>Veteran Artist Residencies is an exempt organization as described in Section 501(c)(3) of the Internal Revenue Code.</p>
+      <p class="footer-p"><a href="mailto:vet.art.residencies@gmail.com">Contact: vet.art.residencies@gmail.com</a> <br/><br/>Veteran Artist Residencies is an exempt organization as described in Section 501(c)(3) of the Internal Revenue Code. <br/><br/>
+        An
+        <a style="color: var(--button)" href="https://www.inkpeople.org/dreammaker-program">Ink People Center for the Arts</a>
+        DreamMaker Project
+      </p>
     </footer>
 
   </body>
