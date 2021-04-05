@@ -3,31 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Veteran Artist Residencies: A Non-Profit Supporting America's Veterans">
-    <meta property="og:description" content="The Veteran Artist Residencies non-profit provides paid artistic residencies to post-9/11 combat veterans seeking healing and expression through the arts.">
-    <meta property="og:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--ZXjkFHED--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tfv32s10me52o9lombtx.png">
-    <meta property="og:url" content="https://www.veteranarts.org">
-    <meta name="twitter:title" content="Veteran Artist Residencies: A Non-Profit Supporting America's Veterans">
-    <meta name="twitter:description" content="The Veteran Artist Residencies non-profit provides paid artistic residencies to post-9/11 combat veterans seeking healing and expression through the arts.">
-    <meta name="twitter:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--ZXjkFHED--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tfv32s10me52o9lombtx.png">
+    <meta property="og:title" content="Veteran Artist Residencies: A Non-Profit Supporting America's Veterans"/>
+    <meta property="og:description" content="The Veteran Artist Residencies non-profit provides paid artistic residencies to post-9/11 combat veterans seeking healing and expression through the arts."/>
+    <meta property="og:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--ZXjkFHED--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tfv32s10me52o9lombtx.png"/>
+    <meta property="og:url" content="https://www.veteranarts.org"/>
+    <meta name="twitter:title" content="Veteran Artist Residencies: A Non-Profit Supporting America's Veterans"/>
+    <meta name="twitter:description" content="The Veteran Artist Residencies non-profit provides paid artistic residencies to post-9/11 combat veterans seeking healing and expression through the arts."/>
+    <meta name="twitter:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--ZXjkFHED--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tfv32s10me52o9lombtx.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="./default.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <script defer src="./default.js"></script>
+
     <link
       href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
       rel="stylesheet"
       type="text/css"
     />
+    <script defer src="./default.js"></script>
     <title>Veteran Artist Residencies</title>
   </head>
 
   <body>
 <!----------------------- DESKTOP NAV -------------------------->
-    <header id="my-header" class="my-header">
+    <header id="sticky" class="my-header" >
       <div class="my-logo-container">
         <img class="my-logo" src="assets/VAR-header.png" style="max-width: 250px;"></img>
       </div>
@@ -37,13 +38,12 @@
         <a href="https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f">Donate</a>
       </nav>
     </header>
-
 <!----------------------- MOBILE NAV -------------------------->
     <header>
       <nav>
         <div class="mobile-visible">
           <img class="mobile-header-logo" src="./assets/quill.png" alt="Logo" />
-          <div href="" class="burger" onclick="openMobileNav()">&#9776;</div>
+          <div class="burger" onclick="openMobileNav()">&#9776;</div>
         </div>
       
         <div class="topnav">
@@ -55,9 +55,7 @@
         </div>
       </nav>
     </header>
-
-
-    <!---------------------VIDEO------------------------------------->
+<!----------------------- VIDEO ------------------------------------->
     <div class="video-container">
       <section>
         <div class="center">
@@ -67,112 +65,97 @@
           </p>
         </div>
 
-
         <div class="misconception-text">
           <h4 class="center">A message from the founder </h4>
         <div class="center"><img class="my-svg" src="assets/hand.svg" style="width:5rem; height:5rem;"></img></div>
 
+        <div class="video-wrapper">
+          <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/okr9qt9117U" allow="autoplay; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </section>
 
-      <div class="video-wrapper">
-        <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/okr9qt9117U" allow="autoplay; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
+      <div class="video-donate-button center">
+        <button 
+          onclick=window.open("https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f");
+        >
+          Donate
+        </button>
       </div>
-    </section>
     </div>
-
-<!---------------------DESKTOP-AD-COPY---------------->
-
-<div class="ad-copy-desktop">
-
-  <h1 class="center ad-copy-header">Why Art?</h1>
-  <hr/>
-
-  <div class="ad-copy-flex-container center">
-
-  <div class="article-container">
-    <img src="assets/sad-face.svg" style="width:6rem; height:6rem;"/>
-
-    <article >
-      <h2 >I could have been a statistic.</h2>
-      <ul>
-        <li>Everyday 20 veterans commit suicide.</li>
-        <li>I came home from Iraq in 2008 confused and angry.</li>
-        <li>Without friends and family, I could have easily become a statistic.</li>
-      </ul>
-    </article>
-  </div>
-
-  <div class="article-container">
-    <img src="assets/think-face.svg" style="width:6rem; height:6rem;"/>
-    <article >
-     <h2 class="">I found purpose in my art.</h2>
-     <ul>
-        <li>I started writing, eventually aspiring to write a book.</li>
-        <li>I had a mission again.</li>
-       <li>In 2020, I released my travel and war memoir, <a href="https://www.amazon.com/Waking-Up-Appalachian-Trail-Brotherhood-ebook/dp/B08715WVPF">Waking Up On the Appalachian Trail</a>, and it quickly became an Amazon best seller.</li>
-      </ul>
-    </article>
-  </div>
-
-  <div class="article-container">
-    <img src="assets/happy-face.svg" style="width:6rem; height:6rem;"/>
-    <article >
-      <h2 class="">The artistic process saves lives.</h2>
-      <ul>
-        <li>Writing about the pain and confusion helped me process my wartime trauma.</li>
-        <li>The clarity made the wounds lose their charge and power over me.</li>
-        <li>This process will helps veterans thrive.</li>
-      </ul>  
-  </article>
-
-  </div>
-  </div>
-</div>
-
-<!-----------------------DONATIONS----------------------------------->
+<!----------------------- DESKTOP-AD-COPY ---------------->
+    <div class="ad-copy-desktop">
+      <h1 class="center ad-copy-header">Why Art?</h1>
+      <hr/>
+      <div class="ad-copy-flex-container center">
+        <div class="article-container">
+          <img src="assets/sad-face.svg" style="width:6rem; height:6rem;"/>
+          <article >
+            <h2 >I could have been a statistic.</h2>
+            <ul>
+              <li>Everyday 20 veterans commit suicide.</li>
+              <li>I came home from Iraq in 2008 confused and angry.</li>
+              <li>Without friends and family, I could have easily become a statistic.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="article-container">
+          <img src="assets/think-face.svg" style="width:6rem; height:6rem;"/>
+          <article >
+            <h2 class="">I found purpose in my art.</h2>
+            <ul>
+              <li>I started writing, eventually aspiring to write a book.</li>
+              <li>I had a mission again.</li>
+              <li>In 2020, I released my travel and war memoir, <a href="https://www.amazon.com/Waking-Up-Appalachian-Trail-Brotherhood-ebook/dp/B08715WVPF">Waking Up On the Appalachian Trail</a>, and it quickly became an Amazon best seller.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="article-container">
+          <img src="assets/happy-face.svg" style="width:6rem; height:6rem;"/>
+          <article >
+            <h2 class="">The artistic process saves lives.</h2>
+            <ul>
+              <li>Writing about the pain and confusion helped me process my wartime trauma.</li>
+              <li>The clarity made the wounds lose their charge and power over me.</li>
+              <li>This process will help veterans thrive.</li>
+            </ul>  
+          </article>
+        </div>
+      </div>
+    </div>
+<!---------------------DONATIONS----------------------------------->
     <section class="donation-section">
-
       <div class="support-call-out center">Only your support can make this <br/> mission possible.</div>
-    
       <section>
         <div class="donate-now from-left slide-in">
-          <h2 class="center">Donate Now. Support a Veteran.</h2>
+          <h2 class="fund-art">Fund art, not war.</h2>
           <button
             onclick=window.open("https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f");
-          >
+            >
             Donate
           </button>
-          <p class="center">Donations are tax deductible. Fund art, not war.</p>
+          <p class="fund-art">Donations are tax deductible. You'll receive an email receipt immediately after your donation.</p>
         </div>
       </section>
     </section>
-
-
-
 <!-----------------------STATS SECTION ------------------------------>
-
-<div class="stats-container">
-  <div class="stat-container-top-row">
-    <div class="stat-item">
-      <div class="count">0</div>
-      <div class="stat-label">Days in Residency</div>
+    <div class="stats-container">
+      <div class="stat-container-top-row">
+        <div class="stat-item">
+          <div class="count">0</div>
+          <div class="stat-label">Days in Residency</div>
+        </div>
+        <div class="stat-item">
+          <div class="count">0</div>
+          <div class="stat-label">Words Written</div>
+        </div>
+      </div>
+      <div class="stat-item">
+        <div class="count" id="asterisk">1*</div>
+        <div class="stat-label">Veterans Served</div>
+        <div class="stat-asterisk">*We were able to provide work for a housing insecure veteran while preparing the studio for its first veteran-artist.</div>
+      </div>
     </div>
-    <div class="stat-item">
-      <div class="count">0</div>
-      <div class="stat-label">Words Written</div>
-    </div>
-  </div>
-  <div class="stat-item">
-    <div class="count" id="asterisk">1*</div>
-    <div class="stat-label">Veteran's Served</div>
-    <div class="stat-asterisk">*We were able to provide work for a homeless veteran while preparing the studio for its first veteran-artist.</div>
-  </div>
-</div>
-
-
-
-
-
 <!---------------------THE MISSION------------------------------------>
     <section id="mission">
       <h2 class="the-mission">The Mission</h2>
@@ -198,7 +181,7 @@
         to show up ready to immerse themselves in their artistic endeavors.
       </p>
     </section>
-
+<!---------------------MAILCHIMP SIGN UP------------------------------>
     <section class="mailing-list from-left slide-in">
       <div id="mc_embed_signup">
         <form
@@ -282,8 +265,7 @@
       </script>
       <!--End mc_embed_signup-->
     </section>
-
-
+<!---------------------FOOTER------------------------------>
     <footer>
       <p class="footer-p"><a href="mailto:vet.art.residencies@gmail.com">Contact: vet.art.residencies@gmail.com</a> <br/><br/>Veteran Artist Residencies is an exempt organization as described in Section 501(c)(3) of the Internal Revenue Code. <br/><br/>
         An

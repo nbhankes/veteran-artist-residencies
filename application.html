@@ -4,36 +4,89 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./application.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css" />
-    <script src="./default.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css"
+    />
+
     <title>Veteran Artist Residencies</title>
   </head>
 
+
   <body>
-    <div class="header-container">
-      <a id="logo" href="./index.html"><img src="./assets/quill.png" alt="Logo" style="width:4rem; height:4rem; margin: 1rem auto;"/></a>
-    </div>
-
-
-    <form action="https://formsubmit.co/veteranartistresidencies@altmails.com" method="POST" />
+<!----------------------- DESKTOP NAV -------------------------->
+    <header id="my-header" class="my-header">
+      <div class="my-logo-container">
+        <img class="my-logo" src="assets/VAR-header.png" style="max-width: 250px;"></img>
+      </div>
+      <nav class="my-nav-container">
+        <a href="./index.html">Return Home</a> 
+      </nav>
+    </header>
+<!----------------------- MOBILE NAV -------------------------->
+    <header>
+      <nav>
+        <div class="mobile-visible">
+          <img class="mobile-header-logo" src="./assets/quill.png" alt="Logo" />
+          <div href="" class="burger" onclick="openMobileNav()">&#9776;</div>
+        </div>
+      
+        <div class="topnav">
+          <div id="myLinks">
+            <a href="./index.html">Return Home</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!----------------------- FORM ------------------------------->
+    <form
+      action="https://formsubmit.co/veteranartistresidencies@altmails.com"
+      method="POST"
+      id="application-form"
+    >
       <label>Name</label>
-      <input type="text" maxlength="80" required name="Applicant's Name" />
+      <input
+        id="form-name"
+        class="invalid"
+        type="text"
+        maxlength="80"
+        required
+        name="name"
+        autofocus
+      />
       <label>Email</label>
-      <input type="email" maxlength="80" required name="Applican't Email" />
-      <label for="phone" >Phone</label>
-      <input type="tel" required pattern="([0-9]){3}-[0-9]{3}-[0-9]{4}" id="input-phone" name="Applicant's Phone Number" oninput="getPhoneInputValue()" />
+      <input
+        type="email"
+        class="invalid"
+        maxlength="80"
+        required
+        name="email"
+        id="form-email"
+      />
+      <label for="phone">Phone</label>
+      <input type="tel" required id="form-phone" name="phone" />
       <label>What</label>
       <textarea required name="Response to what prompt"></textarea>
       <label>Why</label>
       <textarea required name="Response to why prompt"></textarea>
-      <p>This application is a pre-screening process. Your approach to the open-ended format reveals important traits of how your mind works. Just answer in the way that feels most natural.</p>
-      <p>Applicants are encouraged to write their responses elsewhere, somewhere they can be saved mid-edit. </p>
-      <p>Once the application is submitted, applicants can expect to be contacted within two weeks.</p>
+      <p>
+        This application is a pre-screening process. Your approach to the
+        open-ended format reveals important traits of how your mind works. Just
+        answer in the way that feels most natural.
+      </p>
+      <p>
+        Applicants are encouraged to write their responses elsewhere, somewhere
+        they can be saved mid-edit.
+      </p>
+      <p>
+        Once the application is submitted, applicants can expect to be contacted
+        within two weeks.
+      </p>
       <div class="center">
         <input type="submit" value="Submit" />
       </div>
-
     </form>
 
+    <script src="./default.js"></script>
   </body>
 </html>
