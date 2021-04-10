@@ -3,182 +3,248 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Veteran Artist Residencies: A Non-Profit Supporting America's Veterans">
-    <meta property="og:description" content="The Veteran Artist Residencies non-profit provides paid artistic residencies to post-9/11 combat veterans seeking healing and expression through the arts.">
-    <meta property="og:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--ZXjkFHED--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tfv32s10me52o9lombtx.png">
-    <meta property="og:url" content="https://www.veteranarts.org">
-    <meta name="twitter:title" content="Veteran Artist Residencies: A Non-Profit Supporting America's Veterans">
-    <meta name="twitter:description" content="The Veteran Artist Residencies non-profit provides paid artistic residencies to post-9/11 combat veterans seeking healing and expression through the arts.">
-    <meta name="twitter:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--ZXjkFHED--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tfv32s10me52o9lombtx.png">
+    <meta property="og:title" content="Veteran Artist Residencies: A Non-Profit Supporting America's Veterans"/>
+    <meta property="og:description" content="The Veteran Artist Residencies non-profit provides paid artistic residencies to post-9/11 combat veterans seeking healing and expression through the arts."/>
+    <meta property="og:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--ZXjkFHED--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tfv32s10me52o9lombtx.png"/>
+    <meta property="og:url" content="https://www.veteranarts.org"/>
+    <meta name="twitter:title" content="Veteran Artist Residencies: A Non-Profit Supporting America's Veterans"/>
+    <meta name="twitter:description" content="The Veteran Artist Residencies non-profit provides paid artistic residencies to post-9/11 combat veterans seeking healing and expression through the arts."/>
+    <meta name="twitter:image" content="https://res.cloudinary.com/practicaldev/image/fetch/s--ZXjkFHED--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/tfv32s10me52o9lombtx.png"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="./default.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
-    <script defer src="./default.js"></script>
+
     <link
       href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css"
       rel="stylesheet"
       type="text/css"
     />
+    <script defer src="./default.js"></script>
     <title>Veteran Artist Residencies</title>
   </head>
 
   <body>
-
-    <header class="title-area">
-      <div class="name-banner">Veteran Artist Residencies</div>
-      <div class="center ink-people">
-        <h3>
-          An
-          <a style="color: var(--button)" href="https://www.inkpeople.org/dreammaker-program">Ink People Center for the Arts</a>
-          DreamMaker Project
-        </h3>
+<!----------------------- DESKTOP NAV -------------------------->
+    <header id="sticky" class="my-header" >
+      <div class="my-logo-container">
+        <img class="my-logo" src="assets/VAR-header.png" style="max-width: 250px;"></img>
       </div>
+      <nav class="my-nav-container">
+        <a href="#about">The Mission</a> 
+        <a href="./application.html">Apply</a> 
+        <a href="https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f" target="_blank">Donate</a>
+      </nav>
     </header>
+<!----------------------- MOBILE NAV -------------------------->
+    <header>
+      <nav>
+        <div class="mobile-visible">
+          <img class="mobile-header-logo" src="./assets/quill.png" alt="Logo" />
+          <div class="burger" onclick="openMobileNav()">&#9776;</div>
+        </div>
+      
+        <div class="topnav">
+          <div id="myLinks">
+            <a href="#about">THE MISSION</a>
+            <a href="./application.html">APPLY</a>
+            <a href="https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f" target="_blank">DONATE</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!----------------------- VIDEO ------------------------------------->
+    <div class="video-container">
+      <section>
+        <div class="center">
+          <p class="mission-statement" style="margin-bottom: 3rem;">
+            Providing paid artistic
+            residencies for post-9/11 combat veterans.
+          </p>
+        </div>
 
-    <nav>
-      <div id="home">
-        <img id="logo" src="./assets/quill.png" alt="Logo" />
-        <div href="" id="burger" onclick="openMobileNav()">&#9776;</div>
-      </div><!--end #home-->
-      
-      <div class="menu">
-        <ul class="menu-ul">
-          <li><a href="#mission">THE MISSION</a></li>
-          <li><a href="./application.html">APPLY</a></li>
-          <li><a href="https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f">DONATE</a></li>
-        </ul>
+        <div class="misconception-text">
+          <h4 class="center">A message from the founder </h4>
+        <div class="center"><img class="my-svg" src="assets/hand.svg" style="width:5rem; height:5rem;"></img></div>
+
+        <div class="video-wrapper">
+          <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/okr9qt9117U" allow="autoplay; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+      </section>
+
+      <div class="video-donate-button center">
+        <button 
+          onclick=window.open("https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f");
+        >
+          Donate
+        </button>
       </div>
-      
-      <div class="topnav">
-        <div id="myLinks">
-          <a href="#mission">THE MISSION</a>
-          <a href="./application.html">APPLY</a>
-          <a href="https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f">DONATE</a>
+    </div>
+<!----------------------- DESKTOP-AD-COPY ---------------->
+    <div class="ad-copy-desktop">
+      <h1 class="center ad-copy-header">Why Art?</h1>
+      <hr/>
+      <div class="ad-copy-article-container">
+      <div class="ad-copy-flex-container center">
+        <div class="article-container">
+          <img src="assets/sad-face.svg" style="width:6rem; height:6rem;"/>
+          <article >
+            <h2 >I could have been a statistic.</h2>
+            <ul>
+              <li>Everyday 20 veterans commit suicide.</li>
+              <li>I came home from Iraq in 2008 confused and angry.</li>
+              <li>Without friends and family, I could have easily become a statistic.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="article-container">
+          <img src="assets/think-face.svg" style="width:6rem; height:6rem;"/>
+          <article >
+            <h2 class="">I found purpose in my art.</h2>
+            <ul>
+              <li>I started writing, eventually aspiring to write a book.</li>
+              <li>I had a mission again.</li>
+              <li>In 2020, I released my travel and war memoir, <a href="https://www.amazon.com/Waking-Up-Appalachian-Trail-Brotherhood-ebook/dp/B08715WVPF" target="_blank">Waking Up On the Appalachian Trail</a>, and it quickly became an Amazon best seller.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="article-container">
+          <img src="assets/happy-face.svg" style="width:6rem; height:6rem;"/>
+          <article >
+            <h2 class="">The artistic process saves lives.</h2>
+            <ul>
+              <li>Writing about the pain and confusion helped me process my wartime trauma.</li>
+              <li>The clarity made the wounds lose their charge and power over me.</li>
+              <li>This process will help veterans thrive.</li>
+            </ul>  
+          </article>
         </div>
       </div>
-      </div><!--end .menu-->
-    </nav>
-
-    <div class="misconception-text">
-      <h3 style="margin-bottom: 2rem;">
-        We provide paid artistic
-        residencies for post-9/11 combat veterans.
-      </h3>
-      
-    </div>
-
-    <!---------------------VIDEO------------------------------------->
-    <div class="video-container">
-    <section>
-      <div class="misconception-text">
-        <h4 class="center">A message from the founder </h4>
-        <div class="center"><img class="my-svg" src="assets/hand.svg" style="width:5rem; height:5rem;"></img></div>
-      <div class="misconception-text">
-
-      <div class="video-wrapper">
-        <iframe frameborder="0" width="100%" height="100%" src="https://www.youtube.com/embed/okr9qt9117U" allow="autoplay; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>
       </div>
-    </section>
-</div>
-<!-----------------------DONATIONS----------------------------------->
+    </div>
+<!---------------------DONATIONS----------------------------------->
     <section class="donation-section">
-      <h3 class="the-mission center">Your generosity helps veterans find peace and tell their story.</h3>
-    
+      <div class="support-call-out center">Only your support can make this <br/> mission possible.</div>
       <section>
         <div class="donate-now from-left slide-in">
-          <h2>Donate Now. Support a Veteran.</h2>
+          <h2 class="fund-art">Fund art, not war.</h2>
           <button
-            onclick="window.location.href='https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f';"
-          >
+            onclick=window.open("https://www.inkpeople.org/checkout/donate?donatePageId=6016fcd13cfa4175843e901f");
+            >
             Donate
           </button>
-          <p class="center">Donations are tax deductible. Fund art, not war.</p>
+          <p class="fund-art">Donations are tax deductible. You'll receive an email receipt immediately after your donation.</p>
         </div>
       </section>
     </section>
-<!---------------------DESKTOP-AD-COPY---------------->
-
-<div class="ad-copy-desktop">
-
-  <h1 class="center ad-copy-header">Why Art?</h1>
-  <hr/>
-
-  <div class="ad-copy-flex-container center">
-
-  <div class="article-container">
-    <img src="assets/sad-face.svg" style="width:6rem; height:6rem;"/>
-
-    <article >
-      <h2 >I could have been a statistic.</h2>
-      <ul>
-        <li>Everyday 20 veterans commit suicide.</li>
-        <li>I came home from Iraq in 2008 confused and angry.</li>
-        <li>Without friends and family, I could have easily become a statistic.</li>
-      </ul>
-    </article>
-  </div>
-
-  <div class="article-container">
-    <img src="assets/think-face.svg" style="width:6rem; height:6rem;"/>
-    <article >
-     <h2 class="">I found purpose in my art.</h2>
-     <ul>
-        <li>I started writing, eventually aspiring to write a book.</li>
-        <li>I had a mission again.</li>
-       <li>In 2020, I released my travel and war memoir, <a href="https://www.amazon.com/Waking-Up-Appalachian-Trail-Brotherhood-ebook/dp/B08715WVPF">Waking Up On the Appalachian Trail</a>, and it quickly became an Amazon best seller.</li>
-      </ul>
-    </article>
-  </div>
-
-  <div class="article-container">
-    <img src="assets/happy-face.svg" style="width:6rem; height:6rem;"/>
-    <article >
-      <h2 class="">The artistic process saves lives.</h2>
-      <ul>
-        <li>Writing about the pain and confusion helped me process my wartime trauma.</li>
-        <li>The clarity made the wounds lose their charge and power over me.</li>
-        <li>This process will helps veterans thrive.</li>
-      </ul>  
-  </article>
-
-  </div>
-  </div>
-</div>
-
-
-
-
-
-<!---------------------THE MISSION------------------------------------>
-    <section id="mission">
-      <h2 class="the-mission">The Mission</h2>
-      <p>
-        Between 2020 and 2023, the Veteran Artist Residencies non-profit intends
-        to support four veterans by offering each a five-month fully-paid artist
-        residency in beautiful and inspiring <a href="https://visithumboldt.com/">Humboldt County, California</a>.
-      </p>
-      <p>What type of artists are we looking for?</p>
-      <div class="art-list">
-        <ul>
-          <li>Novelists.</li>
-          <li>Memoirists.</li>
-          <li>Poets.</li>
-          <li>Graphic Novelists.</li>
-          <li>Screenplay writers.</li>
-          <li>All forms of writing will be considered.</li>
-        </ul>
+<!-----------------------STATS SECTION ------------------------------>
+    <div class="stats-container">
+      <div class="stat-container-top-row">
+        <div class="stat-item">
+          <div class="count">0</div>
+          <div class="stat-label">Days in Residency</div>
+        </div>
+        <div class="stat-item">
+          <div class="count">0</div>
+          <div class="stat-label">Words Written</div>
+        </div>
       </div>
-      <p>
-        During the application process, we look for potential and ambition. A
-        lot can be accomplished in five months, and we want our veteran artists
-        to show up ready to immerse themselves in their artistic endeavors.
-      </p>
-    </section>
+      <div class="stat-item">
+        <div class="count" id="asterisk">1*</div>
+        <div class="stat-label">Veterans Served</div>
+        <div class="stat-asterisk"  id="about">*We were able to provide work for a housing insecure veteran while preparing the studio for its first veteran-artist.</div>
+      </div>
+    </div>
+<!---------------------MISSION STATEMENT SECTION------------------------------------>
+    <div id="mission">
 
+      <div class="mission-header">
+        <p class="mission-header">Our mission is simple: Discover talented post-9/11 veteran-writers and provide them the freedom to create.</p>
+      </div>
+
+
+      <div class="mission-item-container">
+        <div class="mission-item-top">
+          <img src="assets/spotlight.png" style="width:4rem; height:4rem;"/>
+        </div>
+        <div class="mission-item-center">Listen:</div>
+        <div class="mission-item-bottom">
+          Literature has a way to changing a nation's understanding of itself.
+          <br/>
+          <br/>
+          From Walt Whitman to Kurt Vonnegut, the hell of war imparts uncommon insights about life and America.
+          <br/>
+          <br/>           
+          We all benefit when veteran voices are heard.</div>        
+      </div>
+      <div class="mission-item-container">
+        <div class="mission-item-top">
+          <img src="assets/sweat.svg" style="width:4rem; height:4rem;"/>
+        </div>
+        <div class="mission-item-center">Writing is Hard</div>
+        <div class="mission-item-bottom">
+          Up-and-coming writers give up a normal life. They may isolate and turn down life opportunities, anything to complete their work.
+          <br/>
+          <br/>
+          This path can be unhealthy for veterans. But it doesn't have to be.</div>
+      </div>
+
+    
+      <div class="mission-item-container">
+        <div class="mission-item-top">
+          <img src="assets/freedom.svg" style="width:4rem; height:4rem;"/>          
+        </div>
+        <div class="mission-item-center">Return the Freedom</div>
+        <div class="mission-item-bottom">
+          In an era where our country no longer knows what it stands for, we should all agree that 
+          freedom is a good thing.
+          <br/>
+          <br/>                        
+          Your donations provide the freedom these veteran-artists 
+          once believed they fought for.</div>
+      </div>
+      <div class="mission-item-container">
+        <div class="mission-item-top">
+          <img src="assets/four-people.svg" style="width:4rem; height:4rem;"/>
+        </div>
+        <div class="mission-item-center">A Limited Mission</div>
+        <div class="mission-item-bottom">I founded this non-profit with a limited lifespan and scope. 
+          We're going to help four veterans complete a manuscript.
+          <br/>
+          <br/>
+          If 1,000 Americans donate $60 today, this mission would be funded overnight.
+        </div>
+      </div>
+      <div class="mission-item-container">
+        <div class="mission-item-top">
+          <img src="assets/yogi.svg" style="width:4rem; height:4rem;"/>
+        </div>
+        <div class="mission-item-center">Breath in, breathe out.</div>
+        <div class="mission-item-bottom">Our veteran-artists won't be writing 24/7. That's impossible for everyone but Jack Kerouac.
+          <br/>
+          <br/>
+          So while they're staying, I'll introduce them to <a href="https://vimeo.com/240511650" target="_blank">yoga and meditation</a>, two practices that turned my PTSD-addled mind into a calm, clear pool. 
+          <br/>
+          <br/>
+          Let's get enlightened up in this mother!</div>
+      </div>
+      <div class="mission-item-container">
+        <div class="mission-item-top">
+          <img src="assets/high-five.svg" style="width:4rem; height:4rem;"/>
+        </div>
+        <div class="mission-item-center">Join Our Tribe, Friend</div>
+        <div class="mission-item-bottom">Sign up for our mailing list below, and you'll be able to follow the journey. 
+          <br/>
+          <br/>  
+          You'll receive messages from the founder and veteran-artists residents, pictures and musings, progress reports, and you'll be able to share in all the triumphs and tribulations.</div>
+      </div>
+
+
+    </div>
+<!---------------------MAILCHIMP SIGN UP------------------------------>
     <section class="mailing-list from-left slide-in">
       <div id="mc_embed_signup">
         <form
@@ -190,8 +256,8 @@
           target="_blank"
           novalidate
         >
-          <div id="mc_embed_signup_scroll">
-            <h2>Join Our Mailing List to Follow the Journey.</h2>
+          <div class="center" id="mc_embed_signup_scroll">
+            <h2 >Join the mailing list.</h2>
             <div class="mc-field-group">
               <label for="mce-EMAIL">Email Address </label>
               <input
@@ -262,10 +328,15 @@
       </script>
       <!--End mc_embed_signup-->
     </section>
-
-
+<!---------------------FOOTER------------------------------>
     <footer>
-      <p class="footer-p"><a href="mailto:vet.art.residencies@gmail.com">Contact: vet.art.residencies@gmail.com</a> <br/><br/>Veteran Artist Residencies is an exempt organization as described in Section 501(c)(3) of the Internal Revenue Code.</p>
+      <p class="footer-p"><a href="mailto:vet.art.residencies@gmail.com">Contact: vet.art.residencies@gmail.com</a> <br/><br/>Veteran Artist Residencies is an exempt organization as described in Section 501(c)(3) of the Internal Revenue Code. <br/><br/>
+        An
+        <a style="color: var(--button)" href="https://www.inkpeople.org/dreammaker-program">Ink People Center for the Arts</a>
+        DreamMaker Project
+      </p>
+
+      <div>Icons made by <a href="https://www.freepik.com" title="Freepik" style="color:#deb72b">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style="color:#deb72b">www.flaticon.com</a></div>
     </footer>
 
   </body>
