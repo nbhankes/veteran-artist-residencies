@@ -48,7 +48,7 @@
       <input
         id="form-name"
         type="text"
-        maxlength="80"
+        maxlength="40"
         required
         name="name"
         autofocus
@@ -56,17 +56,17 @@
       <label>Email</label>
       <input
         type="email"
-        maxlength="80"
+        maxlength="40"
         required
         name="email"
         id="form-email"
       />
       <label for="phone">Phone</label>
-      <input type="tel" maxlength="14" required id="form-phone" name="phone" />
+      <input type="tel" maxlength="14" minlength="14" required id="form-phone" name="phone" />
       <label>What</label>
-      <textarea required name="Response to what prompt"></textarea>
+      <textarea required name="what" id="what-prompt"></textarea>
       <label>Why</label>
-      <textarea required name="Response to why prompt"></textarea>
+      <textarea required name="why" id="why-prompt"></textarea>
       <p>
         This application is a pre-screening process. Your approach to the
         open-ended format reveals important traits of how your mind works. Just
@@ -81,7 +81,7 @@
         within two weeks.
       </p>
       <div class="center">
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" id="submit-button" />
       </div>
     </form>
 

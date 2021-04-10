@@ -67,7 +67,7 @@ html {
 }
 
 ::selection {
-  background: var(--main);
+  background: var(--comp-acc-1);
   color: var(--gs-1);
 }
 
@@ -226,7 +226,7 @@ a:hover {
 }
 
 .my-nav-container .donate-nav {
-  background-color: blue;
+  background-color: ;
 }
 
 .my-nav-container a {
@@ -241,7 +241,7 @@ a:hover {
 .my-nav-container a:focus {
   color: var(--comp-acc-1);
   padding: 1rem 1rem;
-  background-color: blue;
+  text-decoration: underline;
 }
 
 .title-area {
@@ -268,6 +268,7 @@ body {
 
 /************** VIDEO / MISCONCEPTION SECTION *************/
 /**********************************************************/
+
 @keyframes mymove {
   from {
     transform: rotate(-180deg);
@@ -342,38 +343,6 @@ iframe {
   margin-top: 4rem;
 }
 
-/*************** Art List ***************/
-/****************************************/
-
-.art-list {
-  margin-left: 5%;
-}
-
-@media only screen and (max-width: 38rem) {
-  .art-list {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 0 0;
-  }
-
-  .art-list li {
-    width: 100%;
-    text-align: left;
-  }
-}
-
-/************** The MISSION *************/
-/****************************************/
-
-.the-mission {
-  width: 100%;
-  border-top: var(--text) 2px solid;
-  border-bottom: var(--text) 4px solid;
-  padding: 1rem 0;
-  margin: 3rem 0;
-}
-
 /**************** Ad Copy ***************/
 /****************************************/
 @media only screen and (max-width: 50rem) {
@@ -383,6 +352,11 @@ iframe {
     padding: 2rem 0rem;
     justify-content: space-around;
   }
+}
+
+.ad-copy-article-container {
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .ad-copy-desktop {
@@ -417,7 +391,7 @@ hr {
   margin: 1rem 1.5rem;
   padding: 0.5rem 0.5rem;
   color: var(--main-comp-1);
-  font-weight: 800;
+  font-weight: 600;
   max-width: 400px;
   flex: 1;
 }
@@ -447,6 +421,64 @@ hr {
 .ad-copy-flex-container article ul {
   line-height: 1.5rem;
   text-align: left;
+  font-size: 1.2rem;
+}
+
+/*********************** DONATIONS SECTION **************************/
+
+.support-call-out {
+  font-size: var(--text-4);
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 2.5rem;
+}
+
+.fund-art {
+  margin: 1rem auto;
+}
+
+button {
+  background-color: var(--button);
+  color: var(--button-text);
+  width: 8rem;
+  height: 3rem;
+  font-weight: heavy;
+  border-radius: 5px;
+  font-size: var(--text-3);
+  border: none;
+}
+
+button:hover {
+  color: var(--button-hover-text);
+  background-color: var(--button-hover);
+}
+
+.donation-section {
+  margin-top: 4rem;
+}
+
+.donate-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--main);
+  color: var(--gs-2);
+  width: 60%;
+  padding: 1rem 1rem;
+  margin: 3rem auto;
+  border-bottom: var(--comp-acc-1) 6px solid;
+}
+
+@media only screen and (max-width: 38rem) {
+  .donate-now {
+    width: 90%;
+  }
+}
+
+.donate-now button {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*********************** STATS SECTION **************************/
@@ -512,90 +544,50 @@ hr {
   }
 }
 
-/*********************** DONATIONS SECTION **************************/
+/************** The MISSION *************/
+/****************************************/
 
-.support-call-out {
+#mission {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 3rem auto;
+}
+
+.mission-header {
+  width: 90%;
   font-size: var(--text-4);
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
   line-height: 2.5rem;
 }
 
-.fund-art {
-  margin: 1rem auto;
+.mission-item-container {
+  max-width: 400px;
+  min-width: 320px;
+  margin: 1rem 1rem;
 }
 
-button {
-  background-color: var(--button);
-  color: var(--button-text);
-  width: 8rem;
-  height: 3rem;
-  font-weight: heavy;
-  border-radius: 5px;
-  font-size: var(--text-3);
-  border: none;
-}
-
-button:hover {
-  color: var(--button-hover-text);
-  background-color: var(--button-hover);
-}
-
-.donation-section {
-  margin-top: 4rem;
-}
-
-.donate-now {
+.mission-item-top {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  background: var(--main);
-  color: var(--gs-2);
-  width: 60%;
-  padding: 1rem 1rem;
-  margin: 3rem auto;
-  border-bottom: var(--comp-acc-1) 6px solid;
 }
 
-@media only screen and (max-width: 38rem) {
-  .donate-now {
-    width: 90%;
-  }
+.mission-item-center {
+  margin: 1rem auto;
+  text-align: center;
+  font-size: var(--text-3);
+  width: 95%;
 }
 
-.donate-now button {
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/***************** SLIDER ANIMATIONS *****************/
-/*****************************************************/
-
-.from-left {
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.from-right {
-  -webkit-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-.from-left,
-.from-right {
-  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in,
-    -webkit-transform 400ms ease-in;
-  opacity: 0;
-}
-
-.from-left.appear,
-.from-right.appear {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 1;
+.mission-item-bottom {
+  margin: 1rem auto;
+  text-align: left;
+  font-size: 1.2rem;
+  width: 95%;
 }
 
 /************** Mailing List FORM ****************/
@@ -685,4 +677,33 @@ footer {
 .ink-people h3 {
   text-align: center;
   width: 100%;
+}
+
+/***************** SLIDER ANIMATIONS *****************/
+/*****************************************************/
+
+.from-left {
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.from-right {
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  transition: opacity 250ms ease-in, transform 400ms ease-in,
+    -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
 }

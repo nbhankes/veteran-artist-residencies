@@ -63,7 +63,7 @@ form {
 }
 
 .valid {
-  color: green;
+  background-color: rgb(0, 128, 0, 0.3);
   caret-color: black;
 }
 
@@ -215,7 +215,7 @@ form {
 .my-nav-container a:focus {
   color: var(--comp-acc-1);
   padding: 1rem 1rem;
-  background-color: blue;
+  font-style: italic;
 }
 
 .title-area {
