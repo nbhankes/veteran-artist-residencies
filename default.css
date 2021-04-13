@@ -225,10 +225,6 @@ a:hover {
   }
 }
 
-.my-nav-container .donate-nav {
-  background-color: ;
-}
-
 .my-nav-container a {
   color: var(--comp-acc-1);
   padding: 1rem 1rem;
@@ -383,7 +379,7 @@ hr {
 
 .ad-copy-header {
   color: var(--main-comp-1);
-  font-weight: 800;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
@@ -391,7 +387,7 @@ hr {
   margin: 1rem 1.5rem;
   padding: 0.5rem 0.5rem;
   color: var(--main-comp-1);
-  font-weight: 600;
+  font-weight: 300;
   max-width: 400px;
   flex: 1;
 }
@@ -490,6 +486,12 @@ button:hover {
   color: var(--main-comp-1);
   width: 100%;
   padding: 3rem 0;
+}
+
+.stats-header {
+  text-align: center;
+  font-size: var(--text-5);
+  margin-bottom: 2rem;
 }
 
 .stat-container-top-row {
