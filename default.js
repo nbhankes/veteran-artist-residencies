@@ -46,7 +46,9 @@ sliders.forEach((slider) => {
 const form = document.querySelector("#application-form");
 
 let phoneInput = document.querySelector("#form-phone");
-phoneInput.addEventListener("input", validatePhone);
+if (phoneInput !== null) {
+  phoneInput.addEventListener("input", validatePhone);
+}
 
 //This regex ids phone numbers: https://www.oreilly.com/library/view/regular-expressions-cookbook/9780596802837/ch04s02.html
 const regFormatPhone = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/
