@@ -207,7 +207,7 @@ a:hover {
   font-size: var(--text-3);
 }
 
-@media only screen and (max-width: 50rem) {
+@media only screen and (max-width: 52rem) {
   .my-nav-container {
     margin: 0rem 1rem 0rem 0rem;
     font-size: var(--text-2);
