@@ -1,3 +1,16 @@
+<<<<<<< HEAD
 DS_Store
 node_modules
 cypress
+=======
+.DS_Store
+
+/node_modules
+
+node_modules
+
+node_modules/
+
+cypress
+
+>>>>>>> 4d63a5ddca030bd5462019390a2f9183c3385dcd
