@@ -23,6 +23,7 @@
       type="text/css"
     />
     <script defer src="./default.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <title>Veteran Artist Residencies</title>
   </head>
 
@@ -166,7 +167,7 @@
       </div>
 
 
-      <div class="mission-item-container">
+      <div class="mission-item-container item-1">
         <div class="mission-item-top">
           <img src="assets/spotlight.png" style="width:4rem; height:4rem;"/>
         </div>
@@ -180,7 +181,7 @@
           <br/>           
           We all benefit when veteran voices are heard.</div>        
       </div>
-      <div class="mission-item-container">
+      <div class="mission-item-container item-2">
         <div class="mission-item-top">
           <img src="assets/sweat.svg" style="width:4rem; height:4rem;"/>
         </div>
@@ -193,7 +194,7 @@
       </div>
 
     
-      <div class="mission-item-container">
+      <div class="mission-item-container item-3">
         <div class="mission-item-top">
           <img src="assets/freedom.svg" style="width:4rem; height:4rem;"/>          
         </div>
@@ -206,7 +207,7 @@
           Your donations provide the freedom these veteran-artists 
           once believed they fought for.</div>
       </div>
-      <div class="mission-item-container">
+      <div class="mission-item-container item-4">
         <div class="mission-item-top">
           <img src="assets/four-people.svg" style="width:4rem; height:4rem;"/>
         </div>
@@ -218,7 +219,7 @@
           If 1,000 Americans donate $60 today, this mission would be funded overnight.
         </div>
       </div>
-      <div class="mission-item-container">
+      <div class="mission-item-container item-5">
         <div class="mission-item-top">
           <img src="assets/yogi.svg" style="width:4rem; height:4rem;"/>
         </div>
@@ -227,11 +228,9 @@
           <br/>
           <br/>
           So while they're staying, I'll introduce them to <a href="https://vimeo.com/240511650" target="_blank">yoga and meditation</a>, two practices that turned my PTSD-addled mind into a calm, clear pool. 
-          <br/>
-          <br/>
-          Let's get enlightened up in this mother!</div>
+</div>
       </div>
-      <div class="mission-item-container">
+      <div class="mission-item-container item-6">
         <div class="mission-item-top">
           <img src="assets/high-five.svg" style="width:4rem; height:4rem;"/>
         </div>
@@ -339,5 +338,16 @@
       <div>Icons made by <a href="https://www.freepik.com" title="Freepik" style="color:#deb72b">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon" style="color:#deb72b">www.flaticon.com</a></div>
     </footer>
 
+    <script>
+      ScrollReveal().reveal('.support-call-out', { delay: 500 });
+      ScrollReveal().reveal('.mission-header', { delay: 500 });
+      ScrollReveal().reveal('.item-1', { delay: 400 });
+      ScrollReveal().reveal('.item-2', { delay: 800 });
+      ScrollReveal().reveal('.item-3', { delay: 1200 });
+      ScrollReveal().reveal('.item-4', { delay: 400 });
+      ScrollReveal().reveal('.item-5', { delay: 800 });
+      ScrollReveal().reveal('.item-6', { delay: 1200 });
+      ScrollReveal().reveal('.ad-copy-header', { delay: 500 });
+    </script>
   </body>
 </html>
