@@ -302,7 +302,7 @@ iframe {
 }
 
 .mission-statement {
-  font-size: var(--text-4);
+  font-size: var(--text-5);
   text-align: center;
 }
 
@@ -423,7 +423,7 @@ hr {
 /*********************** DONATIONS SECTION **************************/
 
 .support-call-out {
-  font-size: var(--text-4);
+  font-size: var(--text-5);
   text-align: center;
   margin-top: 1rem;
   line-height: 2.5rem;
@@ -477,6 +477,90 @@ button:hover {
   margin-right: auto;
 }
 
+/*********************** IDEAL APPLICANT **************************/
+
+.ideal-applicant-container {
+  width: 100%;
+  margin: 5rem auto;
+}
+
+.ideal-applicant-header {
+  text-align: center;
+  font-size: var(--text-5);
+  margin-bottom: 2rem;
+}
+
+.vonnegut-image-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.vonnegut-image {
+  width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ideal-applicant-list {
+  width: 100%;
+  text-align: center;
+  font-size: var(--text-3);
+  margin-top: 2 rem;
+}
+
+.ideal-applicant-form-header {
+  width: 100%;
+  text-align: center;
+  font-size: var(--text-4);
+  margin-top: 4rem;
+}
+
+.ideal-applicant-form {
+  width: 50%;
+  border: 3px solid black;
+  padding: 1rem;
+  font-size: var(--text-3);
+  margin: 3rem auto;
+}
+
+.ideal-applicant-form > label {
+  width: 100%;
+  margin: var(--text-1) 0;
+}
+
+.ideal-applicant-form > input {
+  width: 100%;
+  border: 1px solid black;
+  height: 2rem;
+  margin: 1rem 0;
+  font-size: var(--text-3);
+}
+
+.ideal-applicant-form > textarea {
+  width: 100%;
+  border: 1px solid black;
+  height: 3rem;
+  resize: vertical;
+}
+
+#submit-button {
+  background-color: var(--button);
+  color: var(--button-text);
+  width: 8rem;
+  height: 3rem;
+  font-weight: heavy;
+  border-radius: 5px;
+  font-size: var(--text-3);
+  border: none;
+}
+
+#submit-button:hover {
+  color: var(--button-hover-text);
+  background-color: var(--button-hover);
+}
+
 /*********************** STATS SECTION **************************/
 
 .stats-container {
@@ -491,7 +575,7 @@ button:hover {
 .stats-header {
   text-align: center;
   font-size: var(--text-5);
-  margin-bottom: 2rem;
+  margin: 5rem auto;
 }
 
 .stat-container-top-row {
