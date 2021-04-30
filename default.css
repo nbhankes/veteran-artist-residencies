@@ -575,9 +575,10 @@ hr {
   height: 4rem;
   font-weight: heavy;
   border-radius: 5px;
-  font-size: var(--text-3);
+  font-size: var(--text-4);
   border: none;
   margin-top: var(--text-3);
+  margin-bottom: var(--text-3);
 }
 
 #submit-button:hover {
@@ -599,7 +600,7 @@ hr {
 .stats-header {
   text-align: center;
   font-size: var(--text-5);
-  margin: 5rem auto;
+  margin: 0 auto 3rem auto;
 }
 
 .stat-container-top-row {
@@ -776,6 +777,7 @@ footer {
   color: var(--gs-2);
   background-color: var(--main);
   border-bottom: var(--comp-acc-1) 6px solid;
+  margin-bottom: -3rem;
 }
 
 .footer-p a {
