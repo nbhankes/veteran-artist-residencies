@@ -262,7 +262,7 @@ body {
   position: relative;
 }
 
-/************** VIDEO / MISCONCEPTION SECTION *************/
+/************** VIDEO SECTION *************/
 /**********************************************************/
 
 @keyframes mymove {
@@ -337,6 +337,63 @@ iframe {
 
 .video-donate-button {
   margin-top: 4rem;
+}
+
+/*********************** DONATIONS SECTION **************************/
+
+.support-call-out {
+  font-size: var(--text-4);
+  text-align: center;
+  margin-top: 1rem;
+  line-height: 2.5rem;
+}
+
+.fund-art {
+  margin: 1rem auto;
+}
+
+button {
+  background-color: var(--button);
+  color: var(--button-text);
+  width: 12rem;
+  height: 4rem;
+  font-weight: heavy;
+  border-radius: 5px;
+  font-size: var(--text-4);
+  border: none;
+}
+
+button:hover {
+  color: var(--button-hover-text);
+  background-color: var(--button-hover);
+}
+
+.donation-section {
+  margin-top: 4rem;
+}
+
+.donate-now {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--main);
+  color: var(--gs-2);
+  width: 60%;
+  padding: 1rem 1rem;
+  margin: 3rem auto;
+  border-bottom: var(--comp-acc-1) 6px solid;
+}
+
+@media only screen and (max-width: 38rem) {
+  .donate-now {
+    width: 90%;
+  }
+}
+
+.donate-now button {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /**************** Ad Copy ***************/
@@ -420,63 +477,6 @@ hr {
   font-size: 1.2rem;
 }
 
-/*********************** DONATIONS SECTION **************************/
-
-.support-call-out {
-  font-size: var(--text-5);
-  text-align: center;
-  margin-top: 1rem;
-  line-height: 2.5rem;
-}
-
-.fund-art {
-  margin: 1rem auto;
-}
-
-button {
-  background-color: var(--button);
-  color: var(--button-text);
-  width: 8rem;
-  height: 3rem;
-  font-weight: heavy;
-  border-radius: 5px;
-  font-size: var(--text-3);
-  border: none;
-}
-
-button:hover {
-  color: var(--button-hover-text);
-  background-color: var(--button-hover);
-}
-
-.donation-section {
-  margin-top: 4rem;
-}
-
-.donate-now {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background: var(--main);
-  color: var(--gs-2);
-  width: 60%;
-  padding: 1rem 1rem;
-  margin: 3rem auto;
-  border-bottom: var(--comp-acc-1) 6px solid;
-}
-
-@media only screen and (max-width: 38rem) {
-  .donate-now {
-    width: 90%;
-  }
-}
-
-.donate-now button {
-  margin-top: 1rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 /*********************** IDEAL APPLICANT **************************/
 
 .ideal-applicant-container {
@@ -498,9 +498,20 @@ button:hover {
 }
 
 .vonnegut-image {
-  width: 25rem;
-  margin-left: auto;
-  margin-right: auto;
+  width: 18rem;
+  transform: translate(40px, 0px);
+}
+
+.vonnegut-image {
+  width: 18rem;
+  transform: translate(40px, 0px);
+}
+
+@media only screen and (max-width: 38rem) {
+  .vonnegut-image {
+    width: 18rem;
+    transform: translate(30px, 0px);
+  }
 }
 
 .ideal-applicant-list {
@@ -513,47 +524,60 @@ button:hover {
 .ideal-applicant-form-header {
   width: 100%;
   text-align: center;
-  font-size: var(--text-4);
-  margin-top: 4rem;
+  font-size: var(--text-3);
+  margin-bottom: 2.5rem;
+  margin-top: 1.5rem;
 }
 
 .ideal-applicant-form {
-  width: 50%;
+  width: 60%;
   border: 3px solid black;
   padding: 1rem;
   font-size: var(--text-3);
   margin: 3rem auto;
+
+  background-color: var(--main);
+  border-bottom: var(--comp-acc-1) 6px solid;
+  color: var(--gs-2);
 }
 
 .ideal-applicant-form > label {
-  width: 100%;
+  width: 95%;
   margin: var(--text-1) 0;
+  font-size: var(--text-2);
 }
 
 .ideal-applicant-form > input {
-  width: 100%;
+  width: 95%;
   border: 1px solid black;
   height: 2rem;
-  margin: 1rem 0;
-  font-size: var(--text-3);
+  margin-bottom: 1rem;
+  font-size: var(--text-2);
+  padding: var(--text-1) var(--text-1);
+  caret-color: var(--comp-acc-1);
 }
 
 .ideal-applicant-form > textarea {
-  width: 100%;
+  width: 95%;
   border: 1px solid black;
   height: 3rem;
   resize: vertical;
+  margin-bottom: 1rem;
+  font-size: var(--text-2);
+  caret-color: var(--comp-acc-1);
+  padding: var(--text-1) var(--text-1);
 }
 
 #submit-button {
   background-color: var(--button);
   color: var(--button-text);
-  width: 8rem;
-  height: 3rem;
+  width: 12rem;
+  height: 4rem;
   font-weight: heavy;
   border-radius: 5px;
   font-size: var(--text-3);
   border: none;
+  margin-top: var(--text-3);
 }
 
 #submit-button:hover {
@@ -728,6 +752,10 @@ button:hover {
 #mc_embed_signup_scroll .button-custom:hover {
   color: var(--button-hover-text);
   background-color: var(--button-hover);
+}
+
+.mc-field-group > .email {
+  height: var(--text-3);
 }
 
 /***************** FOOTER *****************/
