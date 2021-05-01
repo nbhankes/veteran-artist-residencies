@@ -142,7 +142,7 @@ a:hover {
 
 .mobile-header-logo {
   display: none;
-  max-width: 2rem;
+  max-width: 4rem;
   align-self: flex-start;
   height: auto;
 }
@@ -164,13 +164,13 @@ a:hover {
 
   .mobile-header-logo {
     display: block;
-    max-width: 2rem;
+    max-width: 3rem;
     margin: 0.5rem 0.5rem;
   }
 
   .burger {
     display: block;
-    font-size: var(--text-3);
+    font-size: var(--text-5);
     margin-right: 1rem;
   }
 }
@@ -524,9 +524,10 @@ hr {
 .ideal-applicant-form-header {
   width: 100%;
   text-align: center;
-  font-size: var(--text-3);
+  font-size: var(--text-4);
   margin-bottom: 2.5rem;
   margin-top: 1.5rem;
+  line-height: var(--text-4);
 }
 
 .ideal-applicant-form {
