@@ -760,6 +760,37 @@ hr {
   height: var(--text-3);
 }
 
+/************* PATRON BUTTON ***************/
+/*******************************************/
+
+.patron-subscription-button {
+  position: fixed;
+  right: 15px;
+  bottom: 40px;
+  height: 3.4rem;
+  width: 12rem;
+  font-size: var(--text-2);
+  border-radius: 50px;
+  background-color: var(--comp-acc-1);
+  -webkit-box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.51);
+  box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.21);
+}
+
+.patron-subscription-button:hover {
+  background-color: var(--comp-acc-2);
+  color: white;
+}
+
+.patron-subscription-button:focus {
+  background-color: var(--comp-acc-2);
+  color: white;
+  margin: 2rem 2rem;
+}
+
+.fa-user {
+  margin-right: var(--text-1);
+}
+
 /***************** FOOTER *****************/
 /******************************************/
 
@@ -794,33 +825,4 @@ footer {
 .ink-people h3 {
   text-align: center;
   width: 100%;
-}
-
-/***************** SLIDER ANIMATIONS *****************/
-/*****************************************************/
-
-.from-left {
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-.from-right {
-  -webkit-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-.from-left,
-.from-right {
-  transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in;
-  transition: opacity 250ms ease-in, transform 400ms ease-in,
-    -webkit-transform 400ms ease-in;
-  opacity: 0;
-}
-
-.from-left.appear,
-.from-right.appear {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  opacity: 1;
 }
