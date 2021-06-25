@@ -464,6 +464,14 @@ button:hover {
     flex-direction: column;
     width: 100%;
   }
+
+  .patron-donation-container {
+    padding: 1rem 0.2rem;
+  }
+
+  .one-time-donation-container {
+    padding: 1rem 0.2rem;
+  }
 }
 
 @media only screen and (max-width: 68rem) {
