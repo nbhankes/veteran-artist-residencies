@@ -368,9 +368,9 @@ mark {
   background-color: var(--mark);
 }
 
+/* !TROUBLESHOOTING MOBILE VIEW */
 .patron-donation-container {
   display: flex;
-  position: relative;
   flex-direction: column;
   margin: 0;
   justify-content: center;
@@ -413,6 +413,7 @@ mark {
   margin-bottom: 3rem;
 }
 
+/* !TROUBLESHOOTING MOBILE VIEW */
 .one-time-donation-container {
   text-align: center;
   margin: 2rem 2rem;
@@ -457,6 +458,7 @@ button:hover {
   margin-top: 4rem;
 }
 
+/* !TROUBLESHOOTING MOBILE VIEW */
 @media only screen and (max-width: 48rem) {
   .donations-container {
     flex-direction: column;
