@@ -1,1 +1,3 @@
-Hi there. I built this website for my non-profit. Please consider donating to support veterans in the arts. The artistic process is healing!
+#### Veteran Artist Residencies is a non-profit providing paid artistic residencies for post-9/11 veterans pursuing careers in writing.
+
+The live website can be viewed at www.veteranarts.org
