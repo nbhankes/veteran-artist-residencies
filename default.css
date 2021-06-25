@@ -466,11 +466,11 @@ button:hover {
   }
 
   .patron-donation-container {
-    padding: 1rem 0.2rem;
+    margin: 1rem 0.2rem;
   }
 
   .one-time-donation-container {
-    padding: 1rem 0.2rem;
+    margin: 1rem 0.2rem;
   }
 }
 
