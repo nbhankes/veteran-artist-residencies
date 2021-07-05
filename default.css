@@ -368,6 +368,14 @@ mark {
   background-color: var(--mark);
 }
 
+mark.red-highlighter {
+  display: inline-block;
+  line-height: 0em;
+  padding-bottom: 0.5em;
+  background-color: RGBA(195,68,79,.6);
+  color: white;
+}
+
 /* !TROUBLESHOOTING MOBILE VIEW */
 .patron-donation-container {
   display: flex;
@@ -466,11 +474,34 @@ button:hover {
   }
 
   .patron-donation-container {
-    margin: 1rem 0.2rem;
+    width: 25rem;
+    height: 55rem;
+    margin: 1rem auto;
   }
 
   .one-time-donation-container {
-    margin: 1rem 0.2rem;
+    width: 25rem;
+    height: 55rem;
+    margin: 1rem auto;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .donations-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .patron-donation-container {
+    width: 300px;
+    height: 55rem;
+    margin: 1rem auto;
+  }
+
+  .one-time-donation-container {
+    width: 300px;
+    height: 55rem;
+    margin: 1rem auto;
   }
 }
 
