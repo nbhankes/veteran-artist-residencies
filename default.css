@@ -386,6 +386,7 @@ mark.red-highlighter {
   margin: 2rem 2rem;
   min-width: 300px;
   max-width: 800px;
+  height: 45rem;
   border-radius: 10px;
   background: white;
   padding: 1rem 1rem;
@@ -428,6 +429,7 @@ mark.red-highlighter {
   border-radius: 3px;
   min-width: 300px;
   max-width: 800px;
+  height: 45rem;
   border-radius: 10px;
   background: white;
   padding: 1rem 1rem;
@@ -474,13 +476,13 @@ button:hover {
   }
 
   .patron-donation-container {
-    width: 25rem;
+    width: 23rem;
     height: 55rem;
     margin: 1rem auto;
   }
 
   .one-time-donation-container {
-    width: 25rem;
+    width: 23rem;
     height: 55rem;
     margin: 1rem auto;
   }
@@ -493,13 +495,13 @@ button:hover {
   }
 
   .patron-donation-container {
-    width: 300px;
+    width: 280px;
     height: 55rem;
     margin: 1rem auto;
   }
 
   .one-time-donation-container {
-    width: 300px;
+    width: 280px;
     height: 55rem;
     margin: 1rem auto;
   }
