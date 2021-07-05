@@ -378,15 +378,14 @@ mark.red-highlighter {
 
 /* !TROUBLESHOOTING MOBILE VIEW */
 .patron-donation-container {
-  display: flex;
   flex-direction: column;
-  margin: 0;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
   margin: 2rem 2rem;
+  border-radius: 3px;
   min-width: 300px;
   max-width: 800px;
-  height: 45rem;
+  height: 50rem;
   border-radius: 10px;
   background: white;
   padding: 1rem 1rem;
@@ -429,7 +428,7 @@ mark.red-highlighter {
   border-radius: 3px;
   min-width: 300px;
   max-width: 800px;
-  height: 45rem;
+  height: 50rem;
   border-radius: 10px;
   background: white;
   padding: 1rem 1rem;
@@ -469,7 +468,7 @@ button:hover {
 }
 
 /* !TROUBLESHOOTING MOBILE VIEW */
-@media only screen and (max-width: 48rem) {
+@media only screen and (max-width: 64rem) {
   .donations-container {
     flex-direction: column;
     width: 100%;
