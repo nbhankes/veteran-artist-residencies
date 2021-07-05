@@ -921,7 +921,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  min-height: 8rem;
+  min-height: 15rem;
   margin-top: 2rem;
   color: var(--text);
   align-items: center;
@@ -948,4 +948,8 @@ footer {
 .ink-people h3 {
   text-align: center;
   width: 100%;
+}
+
+.freepik {
+  margin-bottom: 5rem;
 }
