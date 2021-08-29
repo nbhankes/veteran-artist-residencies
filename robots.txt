@@ -1,2 +1,3 @@
+Sitemap: http://veteranarts.org/sitemap.xml
 User-agent: *
 Disallow:
