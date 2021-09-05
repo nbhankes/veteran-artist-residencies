@@ -303,6 +303,12 @@ iframe {
   font-weight: 400;
 }
 
+@media only screen and (max-width: 64rem) {
+  .mission-statement {
+    font-size: var(--text-5);
+  }
+}
+
 .misconception-section {
   display: flex;
   flex-direction: column;
@@ -342,7 +348,7 @@ iframe {
   width: 100%;
   background-color: var(--main);
   text-align: center;
-  padding-top: var(--text-6);
+  padding: var(--text-6) 0;
   color: white;
   font-size: var(--text-6);
 }
@@ -377,8 +383,8 @@ mark.red-highlighter {
   color: white;
 }
 
-/* !TROUBLESHOOTING MOBILE VIEW */
 .patron-donation-container {
+  display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: flex-start;
@@ -386,11 +392,11 @@ mark.red-highlighter {
   border-radius: 3px;
   min-width: 300px;
   max-width: 800px;
-  height: 50rem;
   border-radius: 10px;
   background: white;
   padding: 1rem 1rem;
   flex: 1 1 20rem;
+  align-self: stretch;
 }
 
 .donations-header-container {
@@ -429,7 +435,6 @@ mark.red-highlighter {
   border-radius: 3px;
   min-width: 300px;
   max-width: 800px;
-  height: 50rem;
   border-radius: 10px;
   background: white;
   padding: 1rem 1rem;
@@ -477,13 +482,11 @@ button:hover {
 
   .patron-donation-container {
     width: 23rem;
-    height: 55rem;
     margin: 1rem auto;
   }
 
   .one-time-donation-container {
     width: 23rem;
-    height: 55rem;
     margin: 1rem auto;
   }
 }
@@ -496,13 +499,11 @@ button:hover {
 
   .patron-donation-container {
     width: 280px;
-    height: 55rem;
     margin: 1rem auto;
   }
 
   .one-time-donation-container {
     width: 280px;
-    height: 55rem;
     margin: 1rem auto;
   }
 }
