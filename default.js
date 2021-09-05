@@ -9,6 +9,28 @@ function openMobileNav() {
   }
 }
 
+//! Donation Modal
+
+const modal = document.querySelector(".modal");
+const activate = document.querySelector(".activate");
+const closeButton = document.querySelector(".ink-people-redirect-button");
+
+/*toggle on button click*/
+function toggleModal() {
+    modal.classList.toggle("active");
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+    }
+}
+
+/*event listeners*/
+activate.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
+
 
 //!Application Form Validation
 
