@@ -801,10 +801,6 @@ hr {
   letter-spacing: 1px;
 }
 
-#asterisk {
-  transform: translate(1.5rem, 0);
-}
-
 .stat-asterisk {
   margin-top: 1rem;
   font-size: var(--text-2);
@@ -819,10 +815,6 @@ hr {
     font-size: var(--text-2);
     font-weight: 600;
     letter-spacing: 0;
-  }
-
-  #asterisk {
-    transform: translate(0.5rem, 0);
   }
 }
 
