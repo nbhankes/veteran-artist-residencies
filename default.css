@@ -801,7 +801,6 @@ hr {
   letter-spacing: 1px;
 }
 
-
 @media only screen and (max-width: 50rem) {
   .count {
     font-size: 5rem;
