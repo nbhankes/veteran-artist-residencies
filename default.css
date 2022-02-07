@@ -801,11 +801,6 @@ hr {
   letter-spacing: 1px;
 }
 
-.stat-asterisk {
-  margin-top: 1rem;
-  font-size: var(--text-2);
-}
-
 @media only screen and (max-width: 50rem) {
   .count {
     font-size: 5rem;
@@ -816,6 +811,7 @@ hr {
     font-weight: 600;
     letter-spacing: 0;
   }
+
 }
 
 /************** The MISSION *************/
