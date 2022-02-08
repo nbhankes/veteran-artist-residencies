@@ -803,7 +803,7 @@ hr {
 
 @media only screen and (max-width: 50rem) {
   .count {
-    font-size: 5rem;
+    font-size: 2.5rem;
   }
 
   .stat-label {
@@ -811,7 +811,6 @@ hr {
     font-weight: 600;
     letter-spacing: 0;
   }
-
 }
 
 /************** The MISSION *************/
