@@ -1,0 +1,23 @@
+{
+  "name": "veteranarts.org",
+  "version": "1.0.0",
+  "description": "Hi there. I built this website for my non-profit. Please consider donating to support veterans in the arts. The artistic process is healing!",
+  "main": "default.js",
+  "scripts": {
+    "test": "test",
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nbhankes/veteran-artist-residencies.git"
+  },
+  "author": "nbhankes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nbhankes/veteran-artist-residencies/issues"
+  },
+  "homepage": "https://github.com/nbhankes/veteran-artist-residencies#readme",
+  "devDependencies": {
+    "cypress": "^7.1.0"
+  }
+}
