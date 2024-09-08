@@ -299,6 +299,7 @@ iframe {
 
 .mission-statement {
   font-size: var(--text-6);
+  color: var(--main-comp-1);
   text-align: center;
   font-weight: 400;
 }
@@ -760,10 +761,10 @@ hr {
 /*********************** STATS SECTION **************************/
 
 .stats-container {
-  background-color: var(--main);
-  border-top: 1px solid var(--main);
-  border-bottom: var(--comp-acc-1) 6px solid;
-  color: var(--main-comp-1);
+  background-color: var(--main-comp-1);
+  border-top: 1px solid var(---main-comp-1);
+  /* border-bottom: var(--comp-acc-1) 6px solid; */
+  color: var(--text);
   width: 100%;
   padding: 3rem 0;
 }
